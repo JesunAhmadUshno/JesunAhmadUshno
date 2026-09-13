@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Jesun Ahmad Ushno. AI Engineer and Data Architect. Nothing leaves the machine.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050a12"/>
+      <stop offset="0.55" stop-color="#03070d"/>
+      <stop offset="1" stop-color="#000305"/>
+    </linearGradient>
+
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+
+    <linearGradient id="sweepFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.8" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a5f3fc" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0d2b3a" stroke-width="1"/>
+    </pattern>
+
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.75"/>
+    </radialGradient>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="softglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="frame"><rect x="0" y="0" width="1200" height="320" rx="10"/></clipPath>
+
+    <clipPath id="typeA"><rect x="60" y="150" width="0" height="34"><animate attributeName="width" values="0;0;430" keyTimes="0;0.18;0.52" dur="7s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeB"><rect x="60" y="186" width="0" height="34"><animate attributeName="width" values="0;0;470" keyTimes="0;0.50;0.80" dur="7s" repeatCount="indefinite"/></rect></clipPath>
+
+    <style>
+      .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+      .flick { animation: flick 5.5s ease-in-out infinite; }
+      @keyframes flick {
+        0%, 92%, 100% { opacity: 1 }
+        93% { opacity: 0.55 }
+        94.5% { opacity: 1 }
+        96% { opacity: 0.7 }
+        97% { opacity: 1 }
+      }
+      .blink { animation: blink 1.05s steps(1) infinite; }
+      @keyframes blink { 0%, 49% { opacity: 1 } 50%, 100% { opacity: 0 } }
+      .pulse { animation: pulse 2.6s ease-in-out infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 0.35 } 50% { opacity: 1 } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)" opacity="0.5"/>
+
+    <!-- horizon glow -->
+    <ellipse cx="600" cy="330" rx="520" ry="90" fill="#0891b2" opacity="0.16" filter="url(#glow)"/>
+
+    <!-- scanline sweep -->
+    <rect x="0" y="-70" width="1200" height="70" fill="url(#sweepFade)" opacity="0.5">
+      <animate attributeName="y" values="-70;320" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- radar assembly -->
+    <g transform="translate(1012 160)">
+      <circle r="96" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.55"/>
+      <circle r="70" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.4"/>
+      <circle r="44" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.3"/>
+      <circle r="18" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.7"/>
+      <line x1="-96" y1="0" x2="96" y2="0" stroke="#0e7490" stroke-width="1" opacity="0.3"/>
+      <line x1="0" y1="-96" x2="0" y2="96" stroke="#0e7490" stroke-width="1" opacity="0.3"/>
+
+      <!-- sweeping arm -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+        <path d="M0 0 L96 0 A96 96 0 0 0 68 -68 Z" fill="#22d3ee" opacity="0.14"/>
+        <line x1="0" y1="0" x2="96" y2="0" stroke="#67e8f9" stroke-width="1.6" filter="url(#softglow)"/>
+      </g>
+
+      <!-- contacts -->
+      <circle cx="56" cy="-34" r="3" fill="#5eead4" class="pulse"/>
+      <circle cx="-42" cy="46" r="3" fill="#5eead4" class="pulse" style="animation-delay:0.9s"/>
+      <circle cx="30" cy="62" r="2.4" fill="#22d3ee" class="pulse" style="animation-delay:1.7s"/>
+      <circle r="4" fill="#a5f3fc" filter="url(#softglow)"/>
+    </g>
+
+    <!-- left rail -->
+    <rect x="40" y="52" width="2" height="216" fill="url(#cyan)" opacity="0.65"/>
+
+    <!-- header chrome -->
+    <text class="mono" x="60" y="72" font-size="12" letter-spacing="3.4" fill="#0e7490">
+      SYSTEM ONLINE  //  LOCAL RUNTIME  //  NO EGRESS
+    </text>
+
+    <!-- name -->
+    <g class="flick">
+      <text class="mono" x="58" y="126" font-size="46" font-weight="700" letter-spacing="1.5"
+            fill="url(#cyan)" filter="url(#glow)">JESUN AHMAD USHNO</text>
+    </g>
+
+    <!-- typed lines -->
+    <g clip-path="url(#typeA)">
+      <text class="mono" x="60" y="174" font-size="17" fill="#94a3b8">
+        <tspan fill="#2dd4bf">&gt;</tspan> ai engineer · data architect · gallea ai
+      </text>
+    </g>
+    <g clip-path="url(#typeB)">
+      <text class="mono" x="60" y="210" font-size="17" fill="#94a3b8">
+        <tspan fill="#2dd4bf">&gt;</tspan> nothing leaves the machine
+      </text>
+    </g>
+    <rect x="534" y="194" width="9" height="19" fill="#67e8f9" class="blink"/>
+
+    <!-- capability chips -->
+    <g class="mono" font-size="11" letter-spacing="1.8">
+      <g transform="translate(60 248)">
+        <rect width="128" height="26" rx="3" fill="#022c34" stroke="#0e7490" stroke-width="1"/>
+        <text x="64" y="17" fill="#5eead4" text-anchor="middle">LOCAL-FIRST</text>
+      </g>
+      <g transform="translate(198 248)">
+        <rect width="118" height="26" rx="3" fill="#022c34" stroke="#0e7490" stroke-width="1"/>
+        <text x="59" y="17" fill="#5eead4" text-anchor="middle">ZERO-TRUST</text>
+      </g>
+      <g transform="translate(326 248)">
+        <rect width="126" height="26" rx="3" fill="#022c34" stroke="#0e7490" stroke-width="1"/>
+        <text x="63" y="17" fill="#5eead4" text-anchor="middle">ISO 27001</text>
+      </g>
+      <g transform="translate(462 248)">
+        <rect width="150" height="26" rx="3" fill="#022c34" stroke="#0e7490" stroke-width="1"/>
+        <text x="75" y="17" fill="#5eead4" text-anchor="middle">WASM RUNTIME</text>
+      </g>
+    </g>
+
+    <!-- status cluster -->
+    <g class="mono" font-size="11" letter-spacing="2">
+      <circle cx="1122" cy="66" r="4" fill="#4ade80" class="pulse"/>
+      <text x="1112" y="70" text-anchor="end" fill="#4ade80">OPERATIONAL</text>
+      <text x="1146" y="286" text-anchor="end" fill="#134e4a">TORONTO · ON</text>
+    </g>
+
+    <rect width="1200" height="320" fill="url(#vignette)"/>
+    <rect x="0.5" y="0.5" width="1199" height="319" rx="10" fill="none" stroke="#155e75" stroke-width="1"/>
+  </g>
+</svg>
