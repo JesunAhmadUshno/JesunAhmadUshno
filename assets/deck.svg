@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-label="Jesun Ahmad Ushno. Orchestration deck. AI Engineer and Data Architect.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050a12"/><stop offset="0.5" stop-color="#03070d"/><stop offset="1" stop-color="#000204"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="0.5" stop-color="#67e8f9"/><stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="1" stop-color="#a5f3fc" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="barG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#67e8f9"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0d2b3a" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.4" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.8"/>
+    </radialGradient>
+    <radialGradient id="coreGlow">
+      <stop offset="0" stop-color="#a5f3fc" stop-opacity="0.55"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="3.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="460" rx="10"/></clipPath>
+    <clipPath id="tickerClip"><rect x="40" y="404" width="1120" height="26"/></clipPath>
+    <clipPath id="waveClip"><rect x="812" y="272" width="336" height="56"/></clipPath>
+    <clipPath id="tA"><rect x="52" y="214" width="0" height="26"><animate attributeName="width" values="0;0;330" keyTimes="0;0.14;0.42" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="tB"><rect x="52" y="244" width="0" height="26"><animate attributeName="width" values="0;0;318" keyTimes="0;0.44;0.70" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+
+    <!-- orbit paths for agent packets -->
+    <path id="o1" fill="none" d="M600,232 m-62,0 a62,62 0 1,0 124,0 a62,62 0 1,0 -124,0"/>
+    <path id="o2" fill="none" d="M600,232 m-100,0 a100,100 0 1,1 200,0 a100,100 0 1,1 -200,0"/>
+    <path id="o3" fill="none" d="M600,232 m-138,0 a138,138 0 1,0 276,0 a138,138 0 1,0 -276,0"/>
+
+    <style>
+      .mono{font-family:ui-monospace,"SFMono-Regular","SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+      .blink{animation:bl 1.05s steps(1) infinite}@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
+      .flick{animation:fl 6s ease-in-out infinite}
+      @keyframes fl{0%,92%,100%{opacity:1}93%{opacity:.5}94.5%{opacity:1}96%{opacity:.72}97%{opacity:1}}
+      .pulse{animation:pu 2.6s ease-in-out infinite}@keyframes pu{0%,100%{opacity:.3}50%{opacity:1}}
+      .bar{transform-origin:bottom;animation:bar 1.9s ease-in-out infinite}
+      @keyframes bar{0%,100%{transform:scaleY(.22)}50%{transform:scaleY(1)}}
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="460" fill="url(#bg)"/>
+    <rect width="1200" height="460" fill="url(#grid)" opacity="0.45"/>
+    <ellipse cx="600" cy="470" rx="560" ry="96" fill="#0891b2" opacity="0.15" filter="url(#glow)"/>
+
+    <!-- ============ top status strip ============ -->
+    <line x1="0" y1="44" x2="1200" y2="44" stroke="#0e7490" stroke-width="1" opacity="0.5"/>
+    <text class="mono" x="40" y="29" font-size="11" letter-spacing="3" fill="#0e7490">ORCHESTRATION DECK</text>
+    <text class="mono" x="252" y="29" font-size="11" letter-spacing="3" fill="#134e4a">BUILD 2026.09</text>
+    <g class="mono" font-size="11" letter-spacing="3">
+      <circle cx="1010" cy="25" r="3.5" fill="#4ade80" class="pulse"/>
+      <text x="1024" y="29" fill="#4ade80">ALL SYSTEMS NOMINAL</text>
+    </g>
+
+    <!-- ============ identity column ============ -->
+    <rect x="34" y="76" width="2" height="300" fill="url(#cyan)" opacity="0.6"/>
+    <text class="mono" x="52" y="104" font-size="11" letter-spacing="3.4" fill="#0e7490">OPERATOR // CLEARANCE: ROOT</text>
+    <g class="flick">
+      <text class="mono" x="50" y="152" font-size="37" font-weight="700" letter-spacing="1" fill="url(#cyan)" filter="url(#glow)">JESUN AHMAD</text>
+      <text class="mono" x="50" y="190" font-size="37" font-weight="700" letter-spacing="1" fill="url(#cyan)" filter="url(#glow)">USHNO</text>
+    </g>
+    <g clip-path="url(#tA)"><text class="mono" x="52" y="233" font-size="15" fill="#94a3b8"><tspan fill="#2dd4bf">&gt;</tspan> ai engineer · data architect</text></g>
+    <g clip-path="url(#tB)"><text class="mono" x="52" y="263" font-size="15" fill="#94a3b8"><tspan fill="#2dd4bf">&gt;</tspan> orchestrating agent fleets</text></g>
+    <rect x="372" y="248" width="8" height="17" fill="#67e8f9" class="blink"/>
+
+    <g class="mono" font-size="10" letter-spacing="1.6">
+      <g transform="translate(52 292)"><rect width="112" height="24" rx="3" fill="#022c34" stroke="#0e7490"/><text x="56" y="16" fill="#5eead4" text-anchor="middle">LOCAL-FIRST</text></g>
+      <g transform="translate(172 292)"><rect width="106" height="24" rx="3" fill="#022c34" stroke="#0e7490"/><text x="53" y="16" fill="#5eead4" text-anchor="middle">ZERO-TRUST</text></g>
+      <g transform="translate(286 292)"><rect width="98" height="24" rx="3" fill="#022c34" stroke="#0e7490"/><text x="49" y="16" fill="#5eead4" text-anchor="middle">ISO 27001</text></g>
+      <g transform="translate(52 324)"><rect width="126" height="24" rx="3" fill="#1c1408" stroke="#b45309"/><text x="63" y="16" fill="#fbbf24" text-anchor="middle">MULTI-AGENT</text></g>
+      <g transform="translate(186 324)"><rect width="120" height="24" rx="3" fill="#1c1408" stroke="#b45309"/><text x="60" y="16" fill="#fbbf24" text-anchor="middle">WASM EDGE</text></g>
+    </g>
+
+    <!-- ============ swarm core ============ -->
+    <g>
+      <circle cx="600" cy="232" r="150" fill="url(#coreGlow)" opacity="0.5"/>
+
+      <!-- static rings -->
+      <circle cx="600" cy="232" r="62" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.4"/>
+      <circle cx="600" cy="232" r="100" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.3"/>
+      <circle cx="600" cy="232" r="138" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.22" stroke-dasharray="3 7"/>
+
+      <!-- energy ring: dash flow -->
+      <circle cx="600" cy="232" r="100" fill="none" stroke="#22d3ee" stroke-width="1.6" opacity="0.55" stroke-dasharray="14 26" filter="url(#soft)">
+        <animate attributeName="stroke-dashoffset" from="0" to="-160" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="232" r="62" fill="none" stroke="#2dd4bf" stroke-width="1.4" opacity="0.5" stroke-dasharray="8 18">
+        <animate attributeName="stroke-dashoffset" from="0" to="104" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- rotating inner agent ring -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 600 232" to="360 600 232" dur="26s" repeatCount="indefinite"/>
+        <g fill="#5eead4">
+          <circle cx="662" cy="232" r="4.5"/><circle cx="631" cy="286" r="4.5"/><circle cx="569" cy="286" r="4.5"/>
+          <circle cx="538" cy="232" r="4.5"/><circle cx="569" cy="178" r="4.5"/><circle cx="631" cy="178" r="4.5"/>
+        </g>
+      </g>
+
+      <!-- counter-rotating outer agent ring -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360 600 232" to="0 600 232" dur="40s" repeatCount="indefinite"/>
+        <g fill="#22d3ee" opacity="0.85">
+          <circle cx="700" cy="232" r="3.6"/><circle cx="671" cy="303" r="3.6"/><circle cx="600" cy="332" r="3.6"/>
+          <circle cx="529" cy="303" r="3.6"/><circle cx="500" cy="232" r="3.6"/><circle cx="529" cy="161" r="3.6"/>
+          <circle cx="600" cy="132" r="3.6"/><circle cx="671" cy="161" r="3.6"/>
+        </g>
+      </g>
+
+      <!-- radial spokes -->
+      <g stroke="#0e7490" stroke-width="1" opacity="0.3">
+        <line x1="600" y1="232" x2="700" y2="232"/><line x1="600" y1="232" x2="600" y2="132"/>
+        <line x1="600" y1="232" x2="500" y2="232"/><line x1="600" y1="232" x2="600" y2="332"/>
+      </g>
+
+      <!-- packets riding the orbits -->
+      <circle r="3.2" fill="#a5f3fc" filter="url(#soft)"><animateMotion dur="4.4s" repeatCount="indefinite"><mpath xlink:href="#o1"/></animateMotion></circle>
+      <circle r="2.8" fill="#fbbf24" filter="url(#soft)"><animateMotion dur="6.8s" repeatCount="indefinite"><mpath xlink:href="#o2"/></animateMotion></circle>
+      <circle r="2.8" fill="#5eead4" filter="url(#soft)"><animateMotion dur="6.8s" begin="-3.4s" repeatCount="indefinite"><mpath xlink:href="#o2"/></animateMotion></circle>
+      <circle r="2.4" fill="#67e8f9" opacity="0.9"><animateMotion dur="9.5s" repeatCount="indefinite"><mpath xlink:href="#o3"/></animateMotion></circle>
+      <circle r="2.4" fill="#67e8f9" opacity="0.9"><animateMotion dur="9.5s" begin="-4.75s" repeatCount="indefinite"><mpath xlink:href="#o3"/></animateMotion></circle>
+
+      <!-- orchestrator core -->
+      <g filter="url(#glow)">
+        <polygon points="600,206 622,219 622,245 600,258 578,245 578,219" fill="#022c34" stroke="#67e8f9" stroke-width="1.6"/>
+        <polygon points="600,216 613,223.5 613,240.5 600,248 587,240.5 587,223.5" fill="#0891b2" opacity="0.5">
+          <animate attributeName="opacity" values="0.25;0.85;0.25" dur="2.8s" repeatCount="indefinite"/>
+        </polygon>
+      </g>
+      <text class="mono" x="600" y="298" font-size="9.5" letter-spacing="2.6" fill="#0e7490" text-anchor="middle">ORCHESTRATOR</text>
+      <text class="mono" x="600" y="388" font-size="9.5" letter-spacing="2.6" fill="#134e4a" text-anchor="middle">AUTO · SIGNOFF · ANCHORED</text>
+    </g>
+
+    <!-- ============ telemetry column ============ -->
+    <rect x="800" y="76" width="360" height="272" rx="5" fill="#020609" stroke="#0e7490" stroke-width="1" opacity="0.9"/>
+    <line x1="800" y1="104" x2="1160" y2="104" stroke="#0e7490" opacity="0.5"/>
+    <text class="mono" x="812" y="96" font-size="10" letter-spacing="2.6" fill="#0e7490">TELEMETRY</text>
+    <text class="mono" x="1148" y="96" font-size="10" letter-spacing="2" fill="#134e4a" text-anchor="end">LIVE</text>
+
+    <!-- throughput bars -->
+    <text class="mono" x="812" y="126" font-size="9" letter-spacing="2" fill="#134e4a">AGENT THROUGHPUT</text>
+    <g>
+      <rect class="bar" x="812" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:0s"/>
+      <rect class="bar" x="832" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:.14s"/>
+      <rect class="bar" x="852" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:.28s"/>
+      <rect class="bar" x="872" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:.42s"/>
+      <rect class="bar" x="892" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:.56s"/>
+      <rect class="bar" x="912" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:.7s"/>
+      <rect class="bar" x="932" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:.84s"/>
+      <rect class="bar" x="952" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:.98s"/>
+      <rect class="bar" x="972" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:1.12s"/>
+      <rect class="bar" x="992" y="134" width="14" height="54" rx="1.5" fill="url(#barG)" style="animation-delay:1.26s"/>
+    </g>
+
+    <!-- autonomy tiers -->
+    <text class="mono" x="1024" y="126" font-size="9" letter-spacing="2" fill="#134e4a">AUTONOMY TIERS</text>
+    <g class="mono" font-size="9" letter-spacing="1.4">
+      <rect x="1024" y="136" width="124" height="14" rx="2" fill="#022c34"/><rect x="1024" y="136" width="112" height="14" rx="2" fill="#0e7490" opacity="0.8"/>
+      <text x="1030" y="146" fill="#a5f3fc">AUTO</text>
+      <rect x="1024" y="156" width="124" height="14" rx="2" fill="#022c34"/><rect x="1024" y="156" width="74" height="14" rx="2" fill="#0891b2" opacity="0.7"/>
+      <text x="1030" y="166" fill="#a5f3fc">SIGNOFF</text>
+      <rect x="1024" y="176" width="124" height="14" rx="2" fill="#1c1408"/><rect x="1024" y="176" width="40" height="14" rx="2" fill="#b45309" opacity="0.8"/>
+      <text x="1030" y="186" fill="#fbbf24">ANCHORED</text>
+    </g>
+
+    <!-- integrity -->
+    <line x1="812" y1="206" x2="1148" y2="206" stroke="#0e7490" opacity="0.28"/>
+    <text class="mono" x="812" y="224" font-size="9" letter-spacing="2" fill="#134e4a">INTEGRITY</text>
+    <text class="mono" x="812" y="244" font-size="12" letter-spacing="1" fill="#5eead4">SHA-256 · VERIFIED</text>
+    <circle cx="1141" cy="240" r="3.5" fill="#4ade80" class="pulse"/>
+    <text class="mono" x="1128" y="244" font-size="9" letter-spacing="1.6" fill="#4ade80" text-anchor="end">OK</text>
+
+    <!-- waveform -->
+    <text class="mono" x="812" y="266" font-size="9" letter-spacing="2" fill="#134e4a">SIGNAL</text>
+    <g clip-path="url(#waveClip)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-168 0" dur="3.4s" repeatCount="indefinite"/>
+        <path d="M812,300 q21,-26 42,0 t42,0 t42,0 t42,0 t42,0 t42,0 t42,0 t42,0 t42,0 t42,0"
+              fill="none" stroke="#22d3ee" stroke-width="1.6" opacity="0.85" filter="url(#soft)"/>
+      </g>
+    </g>
+    <line x1="812" y1="328" x2="1148" y2="328" stroke="#0e7490" opacity="0.28"/>
+
+    <!-- scanline -->
+    <rect x="0" y="-60" width="1200" height="60" fill="url(#sweep)" opacity="0.32">
+      <animate attributeName="y" values="-60;460" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ============ ticker ============ -->
+    <line x1="0" y1="396" x2="1200" y2="396" stroke="#0e7490" opacity="0.45"/>
+    <g clip-path="url(#tickerClip)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" from="1160 0" to="-1400 0" dur="26s" repeatCount="indefinite"/>
+        <text class="mono" x="0" y="422" font-size="11" letter-spacing="2.4" fill="#0e7490">
+          PRIME OS · 191-SEAT ORG CHART  ◆  BIGFISH SWARM ORCHESTRATOR  ◆  PRISM ZERO-TRUST ANALYTICS  ◆  NOPARA WASM TRANSCODE  ◆  TRIDROP P2P MESH  ◆  8-STEP EXECUTION ENGINE  ◆  GIT WORKTREE PER AGENT  ◆  EGRESS DENY ALL
+        </text>
+      </g>
+    </g>
+
+    <rect width="1200" height="460" fill="url(#vig)"/>
+    <rect x="0.5" y="0.5" width="1199" height="459" rx="10" fill="none" stroke="#155e75"/>
+  </g>
+</svg>
