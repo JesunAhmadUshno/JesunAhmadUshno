@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <sub><code>this deck is not a drawing. it rebuilds itself from live repository telemetry every 24h. sync stamp is on the panel.</code></sub>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/CLEARANCE-ROOT-14532d?style=flat-square&labelColor=05080d">
   <img src="https://img.shields.io/badge/EGRESS-DENY_ALL-7f1d1d?style=flat-square&labelColor=05080d">
   <img src="https://img.shields.io/badge/RUNTIME-WASM_·_PYODIDE_·_WEBRTC-0e7490?style=flat-square&labelColor=05080d">
