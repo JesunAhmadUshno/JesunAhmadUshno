@@ -1,0 +1,55 @@
+name: rebuild deck
+
+# The profile deck reports live repository telemetry, so it is regenerated
+# on a schedule rather than hand-edited. Daily rather than hourly: the data
+# underneath it does not move faster than that, and a noisier cadence would
+# bury real commits under bot noise.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build-deck.mjs'
+      - '.github/workflows/deck.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-deck
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Regenerate deck
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: node scripts/build-deck.mjs
+
+      - name: Verify the SVG parses
+        run: |
+          python3 -c "import xml.etree.ElementTree as ET; ET.parse('assets/deck.svg'); print('deck.svg parses')"
+
+      - name: Commit if changed
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet -- assets/deck.svg; then
+            echo "no change"
+            exit 0
+          fi
+          git add assets/deck.svg
+          git commit -m "Rebuild deck from live telemetry"
+          git push
