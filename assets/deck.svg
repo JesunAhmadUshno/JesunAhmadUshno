@@ -31,7 +31,7 @@
 <line x1="0" y1="44" x2="1200" y2="44" stroke="#0e7490" opacity="0.45"/>
 <text class="mono" x="40" y="29" font-size="11" letter-spacing="3" fill="#0e7490">ORCHESTRATION DECK // LIVE TELEMETRY</text>
 <circle cx="1006" cy="25" r="3.5" fill="#4ade80" class="pulse"/>
-<text class="mono" x="1020" y="29" font-size="11" letter-spacing="3" fill="#4ade80">SYNCED 2026-09-14 06:32 UTC</text>
+<text class="mono" x="1020" y="29" font-size="11" letter-spacing="3" fill="#4ade80">SYNCED 2026-09-15 06:25 UTC</text>
 
 <!-- orbital system -->
 <circle cx="600" cy="268" r="118" fill="url(#corona)" opacity="0.55"><animate attributeName="opacity" values="0.35;0.7;0.35" dur="5s" repeatCount="indefinite"/></circle>
