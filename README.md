@@ -1,5 +1,10 @@
+**Serious first-generation AI engineer; production ML, RAG, and agent orchestration.**
+
+Jesun Ahmad Ushno, Toronto. I build systems that compute where the data
+already lives.
+
 <p align="center">
-  <img src="./assets/deck.svg" alt="Orchestration deck. Jesun Ahmad Ushno, AI Engineer and Data Architect." width="100%">
+  <img src="./assets/deck.svg" alt="Orchestration deck. Jesun Ahmad Ushno, serious first-generation AI engineer; production ML, RAG, and agent orchestration." width="100%">
 </p>
 
 <p align="center">
@@ -12,6 +17,8 @@
   <img src="https://img.shields.io/badge/RUNTIME-WASM_·_PYODIDE_·_WEBRTC-0e7490?style=flat-square&labelColor=05080d">
   <img src="https://img.shields.io/badge/POSTURE-ZERO_TRUST-0e7490?style=flat-square&labelColor=05080d">
   <a href="https://orcid.org/0000-0002-6070-9025"><img src="https://img.shields.io/badge/ORCID-0000--0002--6070--9025-0e7490?style=flat-square&labelColor=05080d&logo=orcid&logoColor=22d3ee"></a>
+  <a href="https://jesunahmadushno.com"><img src="https://img.shields.io/badge/SITE-jesunahmadushno.com-0e7490?style=flat-square&labelColor=05080d"></a>
+  <a href="https://www.linkedin.com/in/jesunahmadushno"><img src="https://img.shields.io/badge/LINKEDIN-jesunahmadushno-0e7490?style=flat-square&labelColor=05080d&logo=linkedin&logoColor=22d3ee"></a>
 </p>
 
 ---
@@ -45,6 +52,26 @@ systems that compute where the data already lives.
 Then the same instinct went up a level. A single agent doing the work is a
 system that collects trust. A fleet with explicit autonomy tiers, adversarial
 verification and an owner gate is a system that earns it.
+
+## ▚▚ PROOF, IN NUMBERS
+
+The pinned six. One number each. Numbers, not claims.
+
+| system | the number |
+| :--- | :--- |
+| [jesun-code](https://github.com/JesunAhmadUshno/jesun-code) | Latest release v2.0.0. 711 tests, run in the open |
+| [PRISM](https://github.com/JesunAhmadUshno/PRISM) | 4 stars, the most on this account. Zero bytes leave the browser |
+| [NoPara](https://github.com/JesunAhmadUshno/NoPara) | 23 formats converted in the browser. File limits set in code: 1 GB video, 500 MB audio, 100 MB image |
+| [drawing-modality-test (PulseKey)](https://github.com/JesunAhmadUshno/drawing-modality-test) | 32 metrics per drawing session. 35 sessions analyzed |
+| [SonicClear](https://github.com/JesunAhmadUshno/SonicClear-AI-Studio-Grade-Audio-Enhancer) | A 3-step DSP chain for speech. Noise profile from the first 1 second |
+| [Jesun_Dev](https://github.com/JesunAhmadUshno/Jesun_Dev) | The portfolio itself, live at jesunahmadushno.com |
+
+## ▚▚ ROADMAP SERIES
+
+One series, three passes per project: Learn it, Build it, Deepen it.
+Roadmap v2 holds 22 projects. The repos land on this profile in build
+order and take pin slots as they ship. First in line: rag-eval-harness,
+then llm-from-scratch, then vllm-serving-lab.
 
 ## ▚▚ ORCHESTRATION LAYER
 
