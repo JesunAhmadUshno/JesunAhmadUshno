@@ -27,7 +27,7 @@ already lives.
 root@localhost:~# ./initialize --operator jesun
 
   [  OK  ] identity ................. Jesun Ahmad Ushno
-  [  OK  ] role ..................... AI Engineer & Data Architect
+   [  OK  ] role .................... AI Engineer & Data Specialist
   [  OK  ] station .................. Toronto, ON
   [  OK  ] egress policy ............ DENY ALL
   [  OK  ] integrity ................ SHA-256 verified
@@ -234,7 +234,7 @@ analytics (ResearchGate, 2025).
 
 | period | post |
 | :--- | :--- |
-| 2025 to present | **Gallea Ai** · AI Engineer & Data Architect |
+| 2026 to present | **Gallea Ai** · AI Engineer & Data Specialist |
 | 2023 to 2024 | **KPMG** · IT Advisory, Officer to Senior Officer to Consultant. 20+ Power BI dashboards, Power Automate workflows saving 200+ hours, ISO 27001 audits across banking and healthcare. |
 | 2021 to 2023 | **ESAB, AIUB** · Student Engagement Facilitator, 300+ students |
 
