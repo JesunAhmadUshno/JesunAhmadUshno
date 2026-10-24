@@ -234,7 +234,8 @@ analytics (ResearchGate, 2025).
 
 | period | post |
 | :--- | :--- |
-| 2026 to present | **Gallea Ai** · AI Engineer & Data Specialist |
+| Aug 2026 to present | **Gallea Ai** · AI Engineer & Data Specialist, Toronto. Applied ML, RAG pipelines, data platforms. |
+| Jan to Mar 2026 | **mentAImage** (via Riipen) · Advanced Data Analytics and Machine Learning Intern. Dynamic Feature Extraction Lead, PulseKey v3.0. |
 | 2023 to 2024 | **KPMG** · IT Advisory, Officer to Senior Officer to Consultant. 20+ Power BI dashboards, Power Automate workflows saving 200+ hours, ISO 27001 audits across banking and healthcare. |
 | 2021 to 2023 | **ESAB, AIUB** · Student Engagement Facilitator, 300+ students |
 
