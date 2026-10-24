@@ -227,10 +227,7 @@ analytics (ResearchGate, 2025).
 
 </details>
 
-<details>
-<summary><b>▚ SERVICE RECORD</b></summary>
-
-<br>
+## ▚▚ SERVICE RECORD
 
 | period | post |
 | :--- | :--- |
@@ -248,8 +245,6 @@ University-Bangladesh.
 Security Practitioner (CNSP) · Cisco CyberOps Associate, Network Defense,
 Endpoint Security, Cyber Threat Management · IBM Data Fundamentals · Lean Six
 Sigma White Belt
-
-</details>
 
 <details>
 <summary><b>▚ FIELD OPERATIONS</b></summary>
