@@ -1,4 +1,4 @@
-**Serious first-generation AI engineer; production ML, RAG, and agent orchestration.**
+**AI engineer; production ML, RAG, and agent orchestration.**
 
 Jesun Ahmad Ushno, Toronto. I build systems that compute where the data
 already lives.
