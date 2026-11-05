@@ -266,15 +266,6 @@ regional families. Same systems engineering, different problem domain.
   <a href="https://dribbble.com/JesunAhmadUshno"><img src="https://img.shields.io/badge/DRIBBBLE-05080d?style=for-the-badge&logo=dribbble&logoColor=22d3ee"></a>
 </p>
 
-
-<p align="center">
-  <a href="https://join.slack.com/t/founders-hq-world/shared_invite/zt-4g1ruww7k-uTly4xDJmvMeu~Q7RpsBnQ"><img src="https://img.shields.io/badge/JOIN_FOUNDERS_HQ_ON_SLACK-05080d?style=for-the-badge&logo=slack&logoColor=22d3ee"></a>
-</p>
-
-<p align="center">
-  <sub>Founders HQ is my working HQ on Slack. Builders and collaborators are welcome to join.</sub>
-</p>
-
 <p align="center">
   <sub><code>session terminated · no data written to remote</code></sub>
 </p>
