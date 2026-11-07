@@ -184,7 +184,7 @@ Twenty-nine projects, one method: a research question, pre-registered hypotheses
 
 ## Measured results
 
-Six studies, with the figures as published in their own repositories.
+Seven studies, with the figures as published in their own repositories.
 
 | Study | Result |
 | :--- | :--- |
@@ -193,6 +193,7 @@ Six studies, with the figures as published in their own repositories.
 | [terraform-for-ai-infrastructure](https://github.com/JesunAhmadUshno/terraform-for-ai-infrastructure) | 13 of 13 plan equivalence across OpenTofu and Terraform. Drift detection recall 0.7037, against a naive baseline of 0.1667. |
 | [langgraph-vs-native-study](https://github.com/JesunAhmadUshno/langgraph-vs-native-study) | A framework against a native loop on identical tasks. Pass rate 0.979 in both arms. 48 of 48 fault runs recovered exactly once in both arms. |
 | [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness) | A RAG evaluation harness whose embedding judge is checked against gold-answer proxy labels, not yet against people. Judge the judge, above, is that check. [Live dashboard](https://jesunahmadushno.github.io/rag-eval-harness). |
+| [distributed-training-lab](https://github.com/JesunAhmadUshno/distributed-training-lab) | Pre-registered, two GPU nodes (DGX Spark) over 1 GbE. Two nodes are slower than one in 9 of 12 cells, down to 0.07x; a two-minute link model predicted every cell within 2.7% before the runs. 5 of 7 hypotheses pass, 2 missed narrowly. [Live dashboard](https://jesunahmadushno.github.io/distributed-training-lab/). |
 | [credit-risk-lab](https://github.com/JesunAhmadUshno/credit-risk-lab) | Credit risk modelling for fair access to credit in Canada. [Live dashboard](https://jesunahmadushno.github.io/credit-risk-lab). |
 
 <details>
