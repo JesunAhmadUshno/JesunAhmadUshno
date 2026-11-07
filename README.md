@@ -161,11 +161,11 @@ Every public project, checked every morning: is the live site answering, are the
 ### Recently shipped
 
 <!--PROFILE:RECENT-->
+- `2026-11-07` [distributed-training-lab](https://github.com/JesunAhmadUshno/distributed-training-lab) · [live](https://jesunahmadushno.github.io/distributed-training-lab/)
 - `2026-11-07` [NoPara](https://github.com/JesunAhmadUshno/NoPara) · [live](https://jesunahmadushno.github.io/NoPara/dashboard/)
 - `2026-11-07` [credit-risk-lab](https://github.com/JesunAhmadUshno/credit-risk-lab) · [live](https://jesunahmadushno.github.io/credit-risk-lab/lab/)
 - `2026-11-07` [dingdong-bms](https://github.com/JesunAhmadUshno/dingdong-bms) · [live](https://jesunahmadushno.github.io/dingdong-bms/)
 - `2026-11-07` [drawing-modality-test](https://github.com/JesunAhmadUshno/drawing-modality-test) · [live](https://jesunahmadushno.github.io/drawing-modality-test/dashboard/)
-- `2026-11-07` [BigFish](https://github.com/JesunAhmadUshno/BigFish) · [live](https://jesunahmadushno.github.io/BigFish/lab/)
 <!--/PROFILE:RECENT-->
 
 ## The roadmap
@@ -219,7 +219,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 ## Contribution
 
 <!--PROFILE:CONTRIBUTION-->
-85 public repositories. 156 merged pull requests.
+85 public repositories. 138 merged pull requests.
 <!--/PROFILE:CONTRIBUTION-->
 
 ## Contact
