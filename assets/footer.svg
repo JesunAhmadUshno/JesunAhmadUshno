@@ -44,7 +44,7 @@
     <circle cx="540" cy="66" r="1.6"/>
     <circle cx="900" cy="64" r="1.6"/>
   </g>
-  <g fill="#FF4545">
+  <g fill="#FF4655">
     <circle cx="150" cy="18" r="3"/>
     <circle cx="330" cy="22" r="3"/>
     <circle cx="505" cy="26" r="3"/>
@@ -53,12 +53,12 @@
     <circle cx="1050" cy="28" r="3"/>
   </g>
   <circle class="tw" cx="420" cy="44" r="4" fill="#F5F6F8"/>
-  <circle class="tw tw2" cx="690" cy="20" r="4.5" fill="#FF4545"/>
+  <circle class="tw tw2" cx="690" cy="20" r="4.5" fill="#FF4655"/>
   <circle class="tw tw3" cx="958" cy="42" r="4" fill="#F5F6F8"/>
-  <line x1="0" y1="84" x2="1200" y2="84" stroke="#FF4545" stroke-width="2" opacity=".45"/>
+  <line x1="0" y1="84" x2="1200" y2="84" stroke="#FF4655" stroke-width="2" opacity=".45"/>
   <g>
     <clipPath id="baseClip"><rect x="0" y="82" width="1200" height="4"/></clipPath>
-    <rect class="sweep" x="0" y="83" width="180" height="2" fill="#FF4545" clip-path="url(#baseClip)"/>
+    <rect class="sweep" x="0" y="83" width="180" height="2" fill="#FF4655" clip-path="url(#baseClip)"/>
   </g>
   <text x="600" y="108" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="6" fill="#F5F6F8">TORONTO // 43.65 N, 79.38 W</text>
 </svg>

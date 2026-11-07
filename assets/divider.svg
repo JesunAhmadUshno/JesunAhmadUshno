@@ -9,5 +9,5 @@
   <line x1="300" y1="6" x2="300" y2="18" stroke="#F5F6F8" stroke-width="2"/>
   <line x1="600" y1="6" x2="600" y2="18" stroke="#F5F6F8" stroke-width="2"/>
   <line x1="900" y1="6" x2="900" y2="18" stroke="#F5F6F8" stroke-width="2"/>
-  <rect class="sweep" x="0" y="11" width="180" height="2" fill="#FF4545"/>
+  <rect class="sweep" x="0" y="11" width="180" height="2" fill="#FF4655"/>
 </svg>
