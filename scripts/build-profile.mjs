@@ -83,20 +83,19 @@ function heroSvg({ repos, merged, latestRepo, portraitB64, wordmark }) {
     `<polygon points="1090,54 1101,76 1079,76" fill="none" stroke="#F4F4F2" stroke-opacity=".4"/>` +
     `<g stroke="${RED}" stroke-opacity=".55"><line x1="324" y1="446" x2="336" y2="458"/><line x1="336" y1="446" x2="324" y2="458"/></g>` +
     `<g stroke="#F4F4F2" stroke-opacity=".4"><line x1="684" y1="104" x2="696" y2="116"/><line x1="696" y1="104" x2="684" y2="116"/></g>`;
-  const k = 1080 / wordmark.width;
   const s = wordmark.scale;
-  function letters(fill, animated) {
-    return wordmark.letters.map((l, i) => {
+  function letters(w, fill, animated) {
+    const k = 1040 / w.width;
+    return w.letters.map((l, i) => {
       const path = `<path d="${l.d}" fill="${fill}"/>`;
       const inner = animated ? `<g class="wl" style="animation-delay:${(i * 0.09).toFixed(2)}s">${path}</g>` : path;
       return `<g transform="translate(${(l.x * k).toFixed(1)},0) scale(${(k * s).toFixed(4)},${(-k * s).toFixed(4)})">${inner}</g>`;
     }).join('');
   }
-  const word =
-    `<g transform="translate(60,205)">` +
-    `<g class="glW">${letters('#F4F4F2', false)}</g>` +
-    `<g class="glR">${letters('#7A1420', false)}</g>` +
-    `<g>${letters('url(#gradRed)', true)}</g></g>`;
+  const word = `<g transform="translate(80,220)">` + wordmark.words.map((w, wi) => {
+    const grad = wi % 2 === 0 ? 'url(#gradRed)' : 'url(#gradRedR)';
+    return `<g class="wcyc" style="animation-delay:${wi * 4}s"><g class="glW">${letters(w, '#F4F4F2', false)}</g><g class="glR">${letters(w, '#7A1420', false)}</g><g>${letters(w, grad, true)}</g></g>`;
+  }).join('') + `</g>`;
   let eq = '';
   for (let i = 0; i < 14; i++) eq += `<rect class="eq" style="animation-delay:${(i * 0.13).toFixed(2)}s" x="18" y="${248 + i * 13}" width="14" height="3" fill="${RED}"/>`;
   const brackets =
@@ -119,11 +118,12 @@ function heroSvg({ repos, merged, latestRepo, portraitB64, wordmark }) {
     `.sweepX { animation: sweepX 6.5s linear infinite; } @keyframes sweepX { 0% { transform: translateX(-240px); } 100% { transform: translateX(1100px); } }` +
     `.eq { transform-box: fill-box; transform-origin: left center; animation: eq 2.6s ease-in-out infinite; } @keyframes eq { 0%, 100% { transform: scaleX(.35); opacity: .45; } 50% { transform: scaleX(1); opacity: .9; } }` +
     `.brk { animation: brk 3s ease-in-out infinite; } @keyframes brk { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }` +
+    `.wcyc { opacity: 0; animation: wcyc 16s linear infinite; animation-fill-mode: backwards; } @keyframes wcyc { 0% { opacity: 0; transform: translateY(6px); } 3% { opacity: 1; transform: translateY(0); } 22% { opacity: 1; } 25%, 100% { opacity: 0; } }` +
     `@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }` +
     `</style>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540" role="img" aria-label="Jesun Ahmad Ushno, AI engineer, Toronto">\n` +
     `<rect width="1200" height="540" fill="#05060A"/>\n` +
-    `<defs><linearGradient id="gradRed" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8323F"/><stop offset="1" stop-color="#FF5964"/></linearGradient>` +
+    `<defs><linearGradient id="gradRed" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8323F"/><stop offset="1" stop-color="#FF5964"/></linearGradient><linearGradient id="gradRedR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF5964"/><stop offset="1" stop-color="#E8323F"/></linearGradient>` +
     `<clipPath id="photoClip"><rect x="850" y="212" width="260" height="260" rx="10"/></clipPath></defs>\n${style}\n` +
     `<g class="driftA">${layer(20261106, 30, 150, '#2E3442', '.45')}</g>` +
     `<g class="driftB">${layer(seed, 24, 170, '#3A3F4A', '.55')}</g>\n${markers}\n` +
@@ -131,16 +131,16 @@ function heroSvg({ repos, merged, latestRepo, portraitB64, wordmark }) {
     `<circle class="ring" style="transform-box: view-box; transform-origin: 980px 342px" cx="980" cy="342" r="120" fill="none" stroke="${RED}"/>` +
     `<circle class="ring" style="transform-box: view-box; transform-origin: 980px 342px; animation-delay:2.4s" cx="980" cy="342" r="120" fill="none" stroke="${RED}"/>\n` +
     `${word}\n` +
-    `<rect x="60" y="222" width="1080" height="2" fill="#262A38"/><rect class="sweepX" x="60" y="222" width="220" height="2" fill="${RED}" opacity=".8"/>\n` +
+    `<rect x="80" y="240" width="1040" height="2" fill="#262A38"/><rect class="sweepX" x="60" y="240" width="220" height="2" fill="${RED}" opacity=".8"/>\n` +
     `<circle class="rotA" cx="980" cy="342" r="152" fill="none" stroke="#F4F4F2" stroke-opacity=".5" stroke-dasharray="4 7"/>` +
     `<circle class="rotB" cx="980" cy="342" r="178" fill="none" stroke="${RED}" stroke-opacity=".65" stroke-dasharray="2 9"/>` +
     `<image href="data:image/jpeg;base64,${portraitB64}" x="850" y="212" width="260" height="260" clip-path="url(#photoClip)" preserveAspectRatio="xMidYMid slice"/>` +
     `<g clip-path="url(#photoClip)"><rect class="scanY" x="850" y="212" width="260" height="2" fill="${RED}" opacity=".5"/></g>\n` +
     `${brackets}\n${eq}\n` +
     `${chip(770, 232, 'SUBJECT 0001 / J. A. USHNO')}${chip(512, 300, '43.65N 79.38W / TORONTO')}${chip(676, 396, 'STATUS ONLINE / FLEET LIVE')}${chip(60, 406, 'LATEST SHIP / ' + esc(latestRepo).toUpperCase())}\n` +
-    `<text x="60" y="306" font-family="${COND}" font-weight="700" font-size="56" fill="#F4F4F2">JESUN.</text>` +
-    `<text x="60" y="340" font-family="${COND}" font-size="26" letter-spacing="5" fill="${RED}">AI ENGINEER</text>` +
-    `<text x="60" y="368" font-family="${MONO}" font-size="14" fill="#9BA0AE">PRODUCTION ML / RAG / AGENT ORCHESTRATION</text>\n` +
+    `<text x="60" y="314" font-family="${COND}" font-weight="700" font-size="56" fill="#F4F4F2">JESUN.</text>` +
+    `<text x="60" y="348" font-family="${COND}" font-size="26" letter-spacing="5" fill="${RED}">AI ENGINEER</text>` +
+    `<text x="60" y="376" font-family="${MONO}" font-size="14" fill="#9BA0AE">PRODUCTION ML / RAG / AGENT ORCHESTRATION</text>\n` +
     `<text x="60" y="498" font-family="${COND}" font-weight="800" font-size="44" fill="${RED}">${repos}</text>` +
     `<text x="60" y="522" font-family="${MONO}" font-size="12" letter-spacing="3" fill="#F4F4F2">PUBLIC REPOSITORIES</text>` +
     `<text x="430" y="498" font-family="${COND}" font-weight="800" font-size="44" fill="${RED}">2</text>` +
