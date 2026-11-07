@@ -25,21 +25,20 @@ async function api(path) {
 function ledgerSvg(projects, dark) {
   const W = 1200, cellW = 102, cellH = 62, gapX = 8, gapY = 10, cols = 10;
   const rows = Math.ceil(projects.length / cols);
-  const H = rows * cellH + (rows - 1) * gapY + 8;
-  const c = dark
-    ? { fillBg: '#ECEEE9', fillFg: '#0C0F12', openStroke: '#3A4046', openFg: '#9AA1A8' }
-    : { fillBg: '#101418', fillFg: '#FBFBF9', openStroke: '#C9CBC2', openFg: '#5F6459' };
+  const H = rows * cellH + (rows - 1) * gapY + 24;
   let cells = '';
   projects.forEach((p, i) => {
     const x = 4 + (i % cols) * (cellW + gapX);
-    const y = 4 + Math.floor(i / cols) * (cellH + gapY);
+    const y = 12 + Math.floor(i / cols) * (cellH + gapY);
+    const delay = (i * 0.18).toFixed(2);
     if (p.v1) {
-      cells += `<rect x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="${c.fillBg}"/><text x="${x + cellW / 2}" y="${y + 39}" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" fill="${c.fillFg}">${p.id}</text>`;
+      cells += `<rect class="cell" style="animation-delay:${delay}s" x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="#00e5ff" fill-opacity=".16" stroke="#00e5ff"/><text x="${x + cellW / 2}" y="${y + 39}" text-anchor="middle" font-family="'Courier New', monospace" font-size="21" fill="#aef6ff">${p.id}</text>`;
     } else {
-      cells += `<rect x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="none" stroke="${c.openStroke}"/><text x="${x + cellW / 2}" y="${y + 39}" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" fill="${c.openFg}">${p.id}</text>`;
+      cells += `<rect x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="none" stroke="#ff2975" stroke-opacity=".55" stroke-dasharray="5 5"/><text x="${x + cellW / 2}" y="${y + 39}" text-anchor="middle" font-family="'Courier New', monospace" font-size="21" fill="#ff7dab">${p.id}</text>`;
     }
   });
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Roadmap ledger: ${projects.filter(p => p.v1).length} of ${projects.length} projects at v1.0">\n${cells}\n</svg>\n`;
+  const style = `<style>.cell { animation: pulse 3.6s ease-in-out infinite; } @keyframes pulse { 0%, 100% { fill-opacity: .10; } 50% { fill-opacity: .30; } } @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Roadmap ledger: ${projects.filter(p => p.v1).length} of ${projects.length} projects at v1.0">\n<rect width="${W}" height="${H}" fill="#04060e"/>\n${style}\n${cells}\n</svg>\n`;
 }
 
 function swapBlock(md, tag, inner) {
