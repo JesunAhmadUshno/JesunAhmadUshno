@@ -1,8 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img alt="Jesun Ahmad Ushno" src="assets/header-light.svg" width="100%">
-</picture>
+<img alt="Jesun Ahmad Ushno" src="assets/hero.svg" width="100%">
 <img src="assets/divider.svg" width="100%" alt="">
 
 AI engineer in Toronto. Production ML, retrieval and agent orchestration, each built as a measured study.
