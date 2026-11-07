@@ -3,6 +3,7 @@
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
   <img alt="Jesun Ahmad Ushno" src="assets/header-light.svg" width="100%">
 </picture>
+<img src="assets/divider.svg" width="100%" alt="">
 
 AI engineer in Toronto. Production ML, retrieval and agent orchestration, each built as a measured study.
 
@@ -69,3 +70,5 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 Panels regenerated on 2026-11-07 by the [profile workflow](.github/workflows/profile.yml). Counts are read from GitHub by that workflow, never typed by hand.
 <!--/PROFILE:PROVENANCE-->
 </sub>
+
+<img src="assets/footer.svg" width="100%" alt="Toronto">

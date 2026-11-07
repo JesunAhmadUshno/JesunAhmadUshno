@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24" role="img" aria-label="">
+  <style>
+    .sweep { animation: sweep 4s linear infinite; }
+    @keyframes sweep { 0% { transform: translateX(-200px); } 100% { transform: translateX(1200px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect width="1200" height="24" fill="#04060e"/>
+  <rect x="0" y="11" width="1200" height="2" fill="#123a46"/>
+  <rect x="300" y="6" width="2" height="12" fill="#ff2975"/>
+  <rect x="600" y="6" width="2" height="12" fill="#ff2975"/>
+  <rect x="900" y="6" width="2" height="12" fill="#ff2975"/>
+  <rect class="sweep" x="0" y="10" width="180" height="4" fill="#00e5ff"/>
+</svg>
