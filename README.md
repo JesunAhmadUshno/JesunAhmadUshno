@@ -179,7 +179,7 @@ Twenty-nine projects, one method: a research question, pre-registered hypotheses
 </picture>
 
 <!--PROFILE:ROADMAP-->
-26 of 29 projects at v1.0.
+27 of 29 projects at v1.0.
 <!--/PROFILE:ROADMAP-->
 
 ## Measured results
