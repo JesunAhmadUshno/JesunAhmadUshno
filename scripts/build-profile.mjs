@@ -113,7 +113,7 @@ function heroSvg({ repos, merged, latestRepo, portraitB64 }) {
     `<image href="data:image/jpeg;base64,${portraitB64}" x="820" y="200" width="300" height="300" clip-path="url(#photoClip)" preserveAspectRatio="xMidYMid slice"/>` +
     `<g clip-path="url(#photoClip)"><rect class="scanY" x="820" y="200" width="300" height="2" fill="#FF4545" opacity=".5"/></g>` +
     `${brackets}\n` +
-    `${chip(742, 222, 'SUBJECT 0001 / J. A. USHNO')}${chip(838, 168, '43.65N 79.38W / TORONTO')}${chip(668, 452, 'STATUS ONLINE / FLEET LIVE')}${chip(60, 452, 'LATEST SHIP / ' + esc(latestRepo).toUpperCase())}\n` +
+    `${chip(742, 222, 'SUBJECT 0001 / J. A. USHNO')}${chip(505, 330, '43.65N 79.38W / TORONTO')}${chip(668, 452, 'STATUS ONLINE / FLEET LIVE')}${chip(60, 452, 'LATEST SHIP / ' + esc(latestRepo).toUpperCase())}\n` +
     `<text x="60" y="320" font-family="${COND}" font-weight="700" font-size="64" fill="#F5F6F8">JESUN.</text>` +
     `<text x="60" y="362" font-family="${COND}" font-size="30" letter-spacing="4" fill="#FF4545">AI ENGINEER</text>` +
     `<text x="60" y="396" font-family="${MONO}" font-size="15" fill="#9AA1A8">PRODUCTION ML / RAG / AGENT ORCHESTRATION</text>\n` +
