@@ -1,7 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Jesun Ahmad Ushno">
-  <rect width="1200" height="280" fill="#0C0F12"/>
-  <text x="60" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="600" fill="#ECEEE9">Jesun Ahmad Ushno</text>
-  <line x1="60" y1="178" x2="1140" y2="178" stroke="#262B31" stroke-width="1"/>
-  <text x="60" y="228" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" letter-spacing="6" fill="#9AA1A8">AI ENGINEER</text>
-  <text x="1140" y="228" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" letter-spacing="6" fill="#9AA1A8">TORONTO, CANADA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Jesun Ahmad Ushno">
+  <style>
+    .grid { stroke: #0e4d5c; stroke-width: 1; opacity: .55; }
+    .name { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 72px; font-weight: 700; letter-spacing: 2px; }
+    .sub { font-family: 'Courier New', monospace; font-size: 20px; letter-spacing: 7px; }
+    .scan { animation: scan 5.5s linear infinite; }
+    @keyframes scan { 0% { transform: translateY(0); opacity: 0; } 8% { opacity: .8; } 92% { opacity: .8; } 100% { transform: translateY(300px); opacity: 0; } }
+    .blink { animation: blink 1.1s steps(1) infinite; }
+    @keyframes blink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0; } }
+    .gl1 { animation: gl1 3.4s steps(1) infinite; }
+    .gl2 { animation: gl2 3.4s steps(1) infinite; }
+    @keyframes gl1 { 0%, 91% { transform: translate(0,0); opacity: 0; } 92% { transform: translate(-4px,2px); opacity: .85; } 95% { transform: translate(3px,-2px); opacity: .85; } 98%, 100% { transform: translate(0,0); opacity: 0; } }
+    @keyframes gl2 { 0%, 91% { transform: translate(0,0); opacity: 0; } 92% { transform: translate(4px,-2px); opacity: .85; } 95% { transform: translate(-3px,2px); opacity: .85; } 98%, 100% { transform: translate(0,0); opacity: 0; } }
+    .cyc { animation: cyc 9s linear infinite; opacity: 0; }
+    .cyc2 { animation-delay: 3s; } .cyc3 { animation-delay: 6s; }
+    @keyframes cyc { 0% { opacity: 0; } 4% { opacity: 1; } 29% { opacity: 1; } 34%, 100% { opacity: 0; } }
+    .trace { stroke-dasharray: 6 8; animation: dash 2.8s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -140; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .cyc { opacity: 0; } .cyc1 { opacity: 1; } }
+  </style>
+  <rect width="1200" height="300" fill="#04060e"/>
+  <g>
+    <line class="grid" x1="0" y1="238" x2="1200" y2="238"/>
+    <line class="grid" x1="0" y1="256" x2="1200" y2="256"/>
+    <line class="grid" x1="0" y1="278" x2="1200" y2="278"/>
+    <line class="grid" x1="120" y1="238" x2="40" y2="300"/>
+    <line class="grid" x1="360" y1="238" x2="300" y2="300"/>
+    <line class="grid" x1="600" y1="238" x2="580" y2="300"/>
+    <line class="grid" x1="840" y1="238" x2="860" y2="300"/>
+    <line class="grid" x1="1080" y1="238" x2="1160" y2="300"/>
+  </g>
+  <polyline class="trace" points="0,52 300,52 340,30 640,30" fill="none" stroke="#ff2975" stroke-width="1.5" opacity=".7"/>
+  <polyline class="trace" points="1200,262 920,262 880,282 560,282" fill="none" stroke="#00e5ff" stroke-width="1.5" opacity=".6"/>
+  <text class="name gl1" x="62" y="148" fill="#00e5ff">JESUN AHMAD USHNO</text>
+  <text class="name gl2" x="62" y="148" fill="#ff2975">JESUN AHMAD USHNO</text>
+  <text class="name" x="60" y="146" fill="#eafcff">JESUN AHMAD USHNO</text>
+  <text class="sub" x="62" y="196" fill="#00e5ff">AI ENGINEER // TORONTO</text>
+  <text class="sub cyc cyc1" x="560" y="196" fill="#ff2975">PRODUCTION ML</text>
+  <text class="sub cyc cyc2" x="560" y="196" fill="#ff2975">EVALUATION RELIABILITY</text>
+  <text class="sub cyc cyc3" x="560" y="196" fill="#ff2975">AGENT ORCHESTRATION</text>
+  <rect class="blink" x="1132" y="176" width="12" height="24" fill="#00e5ff"/>
+  <rect class="scan" x="0" y="0" width="1200" height="3" fill="#00e5ff" opacity="0"/>
+  <line x1="60" y1="222" x2="1140" y2="222" stroke="#123a46" stroke-width="1"/>
 </svg>
