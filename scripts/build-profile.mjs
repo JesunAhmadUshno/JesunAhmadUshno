@@ -7,11 +7,12 @@
 // in this repository for the ledger grid, and assets/portrait.jpg.
 
 import fs from 'node:fs/promises';
+import { dashboardFromReadme, ciSummary, group, wallSvg, boardMd, recentMd, judgeMd, swapBlock } from './lab.mjs';
 
 const USER = process.env.PROFILE_USER || 'JesunAhmadUshno';
 const TOKEN = process.env.GITHUB_TOKEN;
 
-async function api(path) {
+async function api(path, { allow404 = false } = {}) {
   const res = await fetch(`https://api.github.com${path}`, {
     headers: {
       accept: 'application/vnd.github+json',
@@ -19,8 +20,40 @@ async function api(path) {
       ...(TOKEN ? { authorization: `Bearer ${TOKEN}` } : {}),
     },
   });
+  if (allow404 && res.status === 404) return null;
   if (!res.ok) throw new Error(`${path} -> ${res.status}`);
   return res.json();
+}
+
+async function pool(items, n, fn) {
+  const out = new Array(items.length); let i = 0;
+  await Promise.all(Array.from({ length: n }, async () => { while (i < items.length) { const k = i++; out[k] = await fn(items[k]); } }));
+  return out;
+}
+
+// A site counts as up when it answers 200 within 15 s. A down site is
+// reported, not fatal: the panel exists to show it.
+async function siteUp(url) {
+  try { return (await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(15000) })).status === 200; }
+  catch { return false; }
+}
+
+async function allRepos() {
+  const out = [];
+  for (let page = 1; ; page++) {
+    const batch = await api(`/users/${USER}/repos?type=owner&per_page=100&page=${page}`);
+    out.push(...batch.filter(r => !r.fork && !r.private));
+    if (batch.length < 100) return out;
+  }
+}
+
+async function enrich(r) {
+  const readme = await api(`/repos/${r.full_name}/readme`, { allow404: true });
+  const md = readme ? Buffer.from(readme.content, 'base64').toString('utf8') : '';
+  const url = dashboardFromReadme(md) || (r.has_pages ? `https://${USER.toLowerCase()}.github.io/${r.name}/` : null);
+  const runs = await api(`/repos/${r.full_name}/actions/runs?branch=${encodeURIComponent(r.default_branch)}&per_page=30`);
+  return { name: r.name, full_name: r.full_name, archived: r.archived, pushed_at: r.pushed_at, url,
+    siteUp: url ? await siteUp(url) : null, ci: ciSummary(runs.workflow_runs) };
 }
 
 function esc(s) {
@@ -151,12 +184,6 @@ function heroSvg({ repos, merged, latestRepo, portraitB64, wordmark }) {
     `</svg>\n`;
 }
 
-function swapBlock(md, tag, inner) {
-  const re = new RegExp(`(<!--PROFILE:${tag}-->)[\\s\\S]*?(<!--/PROFILE:${tag}-->)`);
-  if (!re.test(md)) throw new Error(`marker PROFILE:${tag} missing in README.md`);
-  return md.replace(re, `$1\n${inner}\n$2`);
-}
-
 const user = await api(`/users/${USER}`);
 const search = await api(`/search/issues?q=${encodeURIComponent(`author:${USER} type:pr is:merged`)}&per_page=1`);
 const repos = user.public_repos;
@@ -180,10 +207,24 @@ await fs.writeFile('assets/hero.svg', heroSvg({ repos, merged, latestRepo, portr
 await fs.writeFile('assets/ledger-light.svg', ledgerSvg(projects, false));
 await fs.writeFile('assets/ledger-dark.svg', ledgerSvg(projects, true));
 
+const tracks = JSON.parse(await fs.readFile('data/tracks.json', 'utf8'));
+const skip = new Set(tracks.exclude);
+const projects2 = await pool((await allRepos()).filter(r => !skip.has(r.name)), 8, enrich);
+const groups = group(projects2, tracks);
+if (groups.other.length) throw new Error(`place these repositories in data/tracks.json: ${groups.other.map(p => p.name).join(', ')}`);
+const now = Date.now();
+const checkedAt = new Date(now).toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
+await fs.writeFile('assets/lab-wall.svg', wallSvg(groups, now, checkedAt));
+const judgeData = JSON.parse(await fs.readFile('data/judge-cases.json', 'utf8'));
+const votes = JSON.parse(await fs.readFile('data/votes.json', 'utf8'));
+
 const today = new Date().toISOString().slice(0, 10);
 let md = await fs.readFile('README.md', 'utf8');
 md = swapBlock(md, 'ROADMAP', `${atV1} of ${projects.length} projects at v1.0.`);
 md = swapBlock(md, 'CONTRIBUTION', `${repos} public repositories. ${merged} merged pull requests.`);
-md = swapBlock(md, 'PROVENANCE', `Panels regenerated on ${today} by the [profile workflow](.github/workflows/profile.yml). Counts are read from GitHub by that workflow, never typed by hand.`);
+md = swapBlock(md, 'BOARD', boardMd(groups));
+md = swapBlock(md, 'RECENT', recentMd(groups));
+md = swapBlock(md, 'JUDGE', judgeMd(judgeData, votes, now));
+md = swapBlock(md, 'PROVENANCE', `Panels regenerated on ${today} by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.`);
 await fs.writeFile('README.md', md);
 console.log(`panels rebuilt: repos=${repos} mergedPRs=${merged} roadmap=${atV1}/${projects.length}`);

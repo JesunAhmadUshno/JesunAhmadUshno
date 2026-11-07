@@ -1,0 +1,251 @@
+{
+ "source": {
+  "repo": "JesunAhmadUshno/rag-eval-harness",
+  "file": "real-data/results_real.json",
+  "commit": "974bed06ffee334ee96553ec8bc27adadc32fd63",
+  "run": "datasets.squad.span_without_rerank",
+  "judge": "embedding judge, minishlab/potion-base-8M"
+ },
+ "cases": [
+  {
+   "n": 1,
+   "id": "squad-5710f2e2a58dae1900cd6b74",
+   "question": "Which Irish cities had large Huguenot enclaves?",
+   "gold": "Dublin, Cork, Portarlington, Lisburn, Waterford and Youghal",
+   "answer": "Tours, France",
+   "judge": "FAIL"
+  },
+  {
+   "n": 2,
+   "id": "squad-56e7714a00c9c71400d77137",
+   "question": "What does teaching on an island result in?",
+   "gold": "Extra pay",
+   "answer": "Extra",
+   "judge": "FAIL"
+  },
+  {
+   "n": 3,
+   "id": "squad-56bf1ae93aeaaa14008c951b",
+   "question": "Which network broadcasted the 50th Super Bowl game? ",
+   "gold": "CBS",
+   "answer": "Roman",
+   "judge": "FAIL"
+  },
+  {
+   "n": 4,
+   "id": "squad-5725e36f89a1e219009ac03c",
+   "question": "What day did the Apollo 11 crew return to Earth?",
+   "gold": "July 24",
+   "answer": "8",
+   "judge": "FAIL"
+  },
+  {
+   "n": 5,
+   "id": "squad-5710e8c8a58dae1900cd6b28",
+   "question": "What did the 18th century Huguenot group call themselves?",
+   "gold": "Camisards",
+   "answer": "Camisards",
+   "judge": "PASS"
+  },
+  {
+   "n": 6,
+   "id": "squad-57265e97708984140094c3c5",
+   "question": "How do cestids swim?",
+   "gold": "by undulating their bodies as well as by the beating of their comb-rows.",
+   "answer": "undulating",
+   "judge": "PASS"
+  },
+  {
+   "n": 7,
+   "id": "squad-56e0d54a7aa994140058e76a",
+   "question": "Where was the  Continental Edison Company located?",
+   "gold": "France",
+   "answer": "Tesla",
+   "judge": "FAIL"
+  },
+  {
+   "n": 8,
+   "id": "squad-56de1563cffd8e1900b4b5c3",
+   "question": "What was the naval base called?",
+   "gold": "Dyrrachium",
+   "answer": "Murdoch",
+   "judge": "FAIL"
+  },
+  {
+   "n": 9,
+   "id": "squad-56e1b8f3e3433e14004230e7",
+   "question": "Case complexity likelihoods provide variable probabilities of what general measure? ",
+   "gold": "complexity measure",
+   "answer": "three",
+   "judge": "FAIL"
+  },
+  {
+   "n": 10,
+   "id": "squad-5705ffde52bb891400689787",
+   "question": "Which organization released a California Earthquake forecast?",
+   "gold": "USGS",
+   "answer": "USGS",
+   "judge": "PASS"
+  },
+  {
+   "n": 11,
+   "id": "squad-57265bdfdd62a815002e829f",
+   "question": "How many passengers can the Ford Fiesta accommodate?",
+   "gold": "at least four passengers",
+   "answer": "four",
+   "judge": "PASS"
+  },
+  {
+   "n": 12,
+   "id": "squad-57269cc3dd62a815002e8b13",
+   "question": "How many paid holiday days does the Working Time directive require workers to have each year?",
+   "gold": "4 weeks",
+   "answer": "4",
+   "judge": "PASS"
+  },
+  {
+   "n": 13,
+   "id": "squad-56dfb666231d4119001abcc3",
+   "question": "Where was a lab for Tesla set up?",
+   "gold": "Manhattan",
+   "answer": "While",
+   "judge": "FAIL"
+  },
+  {
+   "n": 14,
+   "id": "squad-57263eaa38643c19005ad374",
+   "question": "What does ctenophora mean in Greek?",
+   "gold": "κτείς kteis 'comb' and φέρω pherō 'carry'",
+   "answer": "t",
+   "judge": "FAIL"
+  },
+  {
+   "n": 15,
+   "id": "squad-56f80fdfaef2371900625d98",
+   "question": "How much of the indulgences went to Rome?",
+   "gold": "one half",
+   "answer": "1979",
+   "judge": "FAIL"
+  },
+  {
+   "n": 16,
+   "id": "squad-5705f09e75f01819005e77a7",
+   "question": "What was the percentage of people that voted in favor of the Pico Act of 1859?",
+   "gold": "75",
+   "answer": "last",
+   "judge": "FAIL"
+  },
+  {
+   "n": 17,
+   "id": "squad-56e1262fcd28a01900c67656",
+   "question": "When was his article published in Century Magazine?",
+   "gold": "1900",
+   "answer": "1900",
+   "judge": "FAIL"
+  },
+  {
+   "n": 18,
+   "id": "squad-5725cfd0271a42140099d229",
+   "question": "What entity sparked the growth of Fresno Station?",
+   "gold": "store",
+   "answer": "Soon",
+   "judge": "FAIL"
+  },
+  {
+   "n": 19,
+   "id": "squad-56f7cdc2a6d7ea1400e1728e",
+   "question": "When was Martin Luther born?",
+   "gold": "10 November 1483",
+   "answer": "10 November",
+   "judge": "FAIL"
+  },
+  {
+   "n": 20,
+   "id": "squad-56bec38b3aeaaa14008c939a",
+   "question": "Besides Death Wish Coffee, how many other competitors participated in the contest?",
+   "gold": "nine",
+   "answer": "nine",
+   "judge": "PASS"
+  },
+  {
+   "n": 21,
+   "id": "squad-56d724620d65d214001983bf",
+   "question": "Who handled the color commentary for Denver's radio stations?",
+   "gold": "Ed McCaffrey",
+   "answer": "KOA",
+   "judge": "FAIL"
+  },
+  {
+   "n": 22,
+   "id": "squad-570d28bdb3d812140066d4a6",
+   "question": "What party rules in Melbourne's inner regions?",
+   "gold": "The Greens",
+   "answer": "Greens",
+   "judge": "PASS"
+  },
+  {
+   "n": 23,
+   "id": "squad-572699db5951b619008f779c",
+   "question": "In what cases can the EU not override German law?",
+   "gold": "if the EU does not comply with its basic constitutional rights and principles",
+   "answer": "Constitutional Court",
+   "judge": "PASS"
+  },
+  {
+   "n": 24,
+   "id": "squad-56e0dbb57aa994140058e779",
+   "question": "Who edited Electrical World magazine?",
+   "gold": "Thomas Commerford Martin",
+   "answer": "Thomas Commerford",
+   "judge": "PASS"
+  },
+  {
+   "n": 25,
+   "id": "squad-572658435951b619008f7025",
+   "question": "Which branch of the EU has had the most influence on the development of EU law?",
+   "gold": "judicial branch",
+   "answer": "judicial",
+   "judge": "PASS"
+  },
+  {
+   "n": 26,
+   "id": "squad-57096505ed30961900e84085",
+   "question": "When is Sky going to introduce UHD broadcasts?",
+   "gold": "2016",
+   "answer": "2016",
+   "judge": "PASS"
+  },
+  {
+   "n": 27,
+   "id": "squad-56f8aa749b226e1400dd0da8",
+   "question": "Besides baptism, what shows the future of heaven to Christians?",
+   "gold": "Ten Commandments",
+   "answer": "Ten Commandments",
+   "judge": "PASS"
+  },
+  {
+   "n": 28,
+   "id": "squad-571ccfbadd7acb1400e4c167",
+   "question": "What is the source of oxygen production through electrocatalytic means?",
+   "gold": "oxides and oxoacids",
+   "answer": "oxidant",
+   "judge": "PASS"
+  },
+  {
+   "n": 29,
+   "id": "squad-56f81393aef2371900625dac",
+   "question": "What scripture did Luther use to back up his opinion that churchmen were not infallible?",
+   "gold": "Matthew 16:18",
+   "answer": "Matthew 16",
+   "judge": "PASS"
+  },
+  {
+   "n": 30,
+   "id": "squad-573312fcd058e614000b56e7",
+   "question": "When was Warsaw ranked as the 32nd most liveable city in the world?",
+   "gold": "2012",
+   "answer": "2012 the Economist",
+   "judge": "PASS"
+  }
+ ]
+}

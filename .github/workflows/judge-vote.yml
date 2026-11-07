@@ -1,0 +1,50 @@
+name: judge the judge
+
+# Records a visitor's vote from a "judge: <case> agree|disagree" issue,
+# replies with the tally and closes the issue. The title is untrusted:
+# it is only read by scripts/vote.mjs from the event file, never
+# interpolated into a shell command here.
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: profile-write
+  cancel-in-progress: false
+
+jobs:
+  vote:
+    if: startsWith(github.event.issue.title, 'judge:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Record the vote
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/vote.mjs
+
+      - name: Run profile checks
+        run: node scripts/check-profile.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet -- README.md data/votes.json; then
+            echo "no change"
+            exit 0
+          fi
+          git add README.md data/votes.json
+          git commit -m "Record a Judge the Judge vote"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1

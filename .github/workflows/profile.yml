@@ -15,14 +15,17 @@ on:
       - 'scripts/build-profile.mjs'
       - 'scripts/check-profile.mjs'
       - 'data/roadmap.json'
+      - 'data/tracks.json'
+      - 'data/judge-cases.json'
+      - 'scripts/lab.mjs'
       - '.github/workflows/profile.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: rebuild-profile
-  cancel-in-progress: true
+  group: profile-write
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -33,6 +36,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: Unit tests
+        run: node --test scripts/lab.test.mjs
 
       - name: Regenerate panels
         env:
@@ -45,7 +51,7 @@ jobs:
 
       - name: Verify the SVGs parse
         run: |
-          python3 -c "import xml.etree.ElementTree as ET; [ET.parse(f) for f in ['assets/hero.svg','assets/ledger-light.svg','assets/ledger-dark.svg','assets/divider.svg','assets/footer.svg']]; print('svgs parse')"
+          python3 -c "import xml.etree.ElementTree as ET; [ET.parse(f) for f in ['assets/hero.svg','assets/ledger-light.svg','assets/ledger-dark.svg','assets/divider.svg','assets/footer.svg','assets/lab-wall.svg']]; print('svgs parse')"
 
       - name: Commit if changed
         run: |
@@ -57,4 +63,5 @@ jobs:
           fi
           git add README.md assets
           git commit -m "Rebuild profile panels from live data"
-          git push
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1
