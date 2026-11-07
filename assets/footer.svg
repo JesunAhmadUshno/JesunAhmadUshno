@@ -1,50 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="Toronto">
   <style>
-    .bar { animation: eq 2s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom; }
-    @keyframes eq { 0%, 100% { transform: scaleY(.35); } 50% { transform: scaleY(1); } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    .tw { animation: tw 2.6s ease-in-out infinite; }
+    .tw2 { animation-delay: .9s; } .tw3 { animation-delay: 1.7s; }
+    @keyframes tw { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+    .sweep { animation: sweep 4s linear infinite; }
+    @keyframes sweep { 0% { transform: translateX(-200px); } 100% { transform: translateX(1220px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .tw { opacity: 1; } .sweep { transform: translateX(500px); } }
   </style>
-  <rect width="1200" height="120" fill="#04060e"/>
-  <rect class="bar" style="animation-delay:0.0s; animation-duration:2.2s" x="20" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.09s; animation-duration:1.9s" x="49" y="34" width="10" height="54" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.18s; animation-duration:2.2s" x="78" y="50" width="10" height="38" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.27s; animation-duration:1.6s" x="107" y="34" width="10" height="54" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.36s; animation-duration:2.5s" x="136" y="50" width="10" height="38" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.45s; animation-duration:1.6s" x="165" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.54s; animation-duration:2.5s" x="194" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.63s; animation-duration:2.2s" x="223" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.72s; animation-duration:2.5s" x="252" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.81s; animation-duration:1.9s" x="281" y="50" width="10" height="38" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.9s; animation-duration:1.6s" x="310" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:0.99s; animation-duration:2.5s" x="339" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.08s; animation-duration:1.6s" x="368" y="66" width="10" height="22" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.17s; animation-duration:2.5s" x="397" y="66" width="10" height="22" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.26s; animation-duration:2.5s" x="426" y="66" width="10" height="22" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.35s; animation-duration:2.2s" x="455" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.44s; animation-duration:1.9s" x="484" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.53s; animation-duration:1.6s" x="513" y="50" width="10" height="38" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.62s; animation-duration:1.6s" x="542" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.71s; animation-duration:1.6s" x="571" y="66" width="10" height="22" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.8s; animation-duration:2.2s" x="600" y="66" width="10" height="22" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.89s; animation-duration:1.6s" x="629" y="58" width="10" height="30" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:1.98s; animation-duration:1.6s" x="658" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.07s; animation-duration:1.6s" x="687" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.16s; animation-duration:2.5s" x="716" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.25s; animation-duration:2.2s" x="745" y="34" width="10" height="54" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.34s; animation-duration:2.5s" x="774" y="58" width="10" height="30" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.43s; animation-duration:1.9s" x="803" y="66" width="10" height="22" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.52s; animation-duration:2.2s" x="832" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.61s; animation-duration:2.2s" x="861" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.7s; animation-duration:1.9s" x="890" y="58" width="10" height="30" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.79s; animation-duration:1.6s" x="919" y="34" width="10" height="54" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.88s; animation-duration:1.6s" x="948" y="42" width="10" height="46" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:2.97s; animation-duration:2.5s" x="977" y="58" width="10" height="30" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:3.06s; animation-duration:2.2s" x="1006" y="34" width="10" height="54" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:3.15s; animation-duration:2.5s" x="1035" y="34" width="10" height="54" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:3.24s; animation-duration:2.5s" x="1064" y="74" width="10" height="14" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:3.33s; animation-duration:1.6s" x="1093" y="50" width="10" height="38" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:3.42s; animation-duration:1.9s" x="1122" y="58" width="10" height="30" fill="#00e5ff" fill-opacity=".75"/>
-  <rect class="bar" style="animation-delay:3.51s; animation-duration:1.6s" x="1151" y="34" width="10" height="54" fill="#00e5ff" fill-opacity=".75"/>
-  <rect x="0" y="88" width="1200" height="2" fill="#ff2975"/>
-  <text x="600" y="112" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" letter-spacing="6" fill="#9adfff">TORONTO // 43.65 N, 79.38 W</text>
+  <rect width="1200" height="120" fill="#050507"/>
+  <g stroke="#3A3F4A" stroke-width="1" opacity=".5">
+    <line x1="60" y1="30" x2="150" y2="18"/>
+    <line x1="150" y1="18" x2="238" y2="38"/>
+    <line x1="238" y1="38" x2="330" y2="22"/>
+    <line x1="330" y1="22" x2="420" y2="44"/>
+    <line x1="420" y1="44" x2="505" y2="26"/>
+    <line x1="505" y1="26" x2="598" y2="40"/>
+    <line x1="598" y1="40" x2="690" y2="20"/>
+    <line x1="690" y1="20" x2="782" y2="36"/>
+    <line x1="782" y1="36" x2="870" y2="24"/>
+    <line x1="870" y1="24" x2="958" y2="42"/>
+    <line x1="958" y1="42" x2="1050" y2="28"/>
+    <line x1="1050" y1="28" x2="1140" y2="38"/>
+    <line x1="150" y1="18" x2="330" y2="22"/>
+    <line x1="505" y1="26" x2="782" y2="36"/>
+    <line x1="238" y1="38" x2="420" y2="44"/>
+  </g>
+  <g fill="#F5F6F8">
+    <circle cx="60" cy="30" r="2.5"/>
+    <circle cx="238" cy="38" r="2"/>
+    <circle cx="420" cy="44" r="2.5"/>
+    <circle cx="598" cy="40" r="2"/>
+    <circle cx="782" cy="36" r="2.5"/>
+    <circle cx="958" cy="42" r="2"/>
+    <circle cx="1140" cy="38" r="2.5"/>
+    <circle cx="105" cy="52" r="1.8"/>
+    <circle cx="285" cy="56" r="1.8"/>
+    <circle cx="462" cy="58" r="1.8"/>
+    <circle cx="645" cy="54" r="1.8"/>
+    <circle cx="828" cy="57" r="1.8"/>
+    <circle cx="1010" cy="55" r="1.8"/>
+    <circle cx="700" cy="12" r="1.6"/>
+    <circle cx="180" cy="64" r="1.6"/>
+    <circle cx="540" cy="66" r="1.6"/>
+    <circle cx="900" cy="64" r="1.6"/>
+  </g>
+  <g fill="#FF4545">
+    <circle cx="150" cy="18" r="3"/>
+    <circle cx="330" cy="22" r="3"/>
+    <circle cx="505" cy="26" r="3"/>
+    <circle cx="690" cy="20" r="3"/>
+    <circle cx="870" cy="24" r="3"/>
+    <circle cx="1050" cy="28" r="3"/>
+  </g>
+  <circle class="tw" cx="420" cy="44" r="4" fill="#F5F6F8"/>
+  <circle class="tw tw2" cx="690" cy="20" r="4.5" fill="#FF4545"/>
+  <circle class="tw tw3" cx="958" cy="42" r="4" fill="#F5F6F8"/>
+  <line x1="0" y1="84" x2="1200" y2="84" stroke="#FF4545" stroke-width="2" opacity=".45"/>
+  <g>
+    <clipPath id="baseClip"><rect x="0" y="82" width="1200" height="4"/></clipPath>
+    <rect class="sweep" x="0" y="83" width="180" height="2" fill="#FF4545" clip-path="url(#baseClip)"/>
+  </g>
+  <text x="600" y="108" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="6" fill="#F5F6F8">TORONTO // 43.65 N, 79.38 W</text>
 </svg>
