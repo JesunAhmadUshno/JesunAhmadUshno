@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Jesun Ahmad Ushno">
+  <rect width="1200" height="280" fill="#0C0F12"/>
+  <text x="60" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="600" fill="#ECEEE9">Jesun Ahmad Ushno</text>
+  <line x1="60" y1="178" x2="1140" y2="178" stroke="#262B31" stroke-width="1"/>
+  <text x="60" y="228" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" letter-spacing="6" fill="#9AA1A8">AI ENGINEER</text>
+  <text x="1140" y="228" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" letter-spacing="6" fill="#9AA1A8">TORONTO, CANADA</text>
+</svg>

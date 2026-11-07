@@ -1,0 +1,60 @@
+name: rebuild profile panels
+
+# The profile reports live repository data, so its panels are
+# regenerated on a schedule by this repository's own workflow.
+# The builder fails closed: if any GitHub read fails, nothing is
+# written and the previous panels stay.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build-profile.mjs'
+      - 'scripts/check-profile.mjs'
+      - 'data/roadmap.json'
+      - '.github/workflows/profile.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-profile
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Regenerate panels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: node scripts/build-profile.mjs
+
+      - name: Run profile checks
+        run: node scripts/check-profile.mjs
+
+      - name: Verify the SVGs parse
+        run: |
+          python3 -c "import xml.etree.ElementTree as ET; [ET.parse(f) for f in ['assets/header-light.svg','assets/header-dark.svg','assets/ledger-light.svg','assets/ledger-dark.svg']]; print('svgs parse')"
+
+      - name: Commit if changed
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet -- README.md assets; then
+            echo "no change"
+            exit 0
+          fi
+          git add README.md assets
+          git commit -m "Rebuild profile panels from live data"
+          git push

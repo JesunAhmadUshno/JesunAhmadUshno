@@ -1,0 +1,121 @@
+{
+ "note": "Roadmap v3 status, mirrored from the batch ledger (hidden_files/batch-state.md). v1 means the project has shipped v1.0. Update this file when a project ships; the profile workflow re-renders the ledger from it.",
+ "projects": [
+  {
+   "id": "P01",
+   "v1": true
+  },
+  {
+   "id": "P02",
+   "v1": true
+  },
+  {
+   "id": "P03",
+   "v1": true
+  },
+  {
+   "id": "P04",
+   "v1": true
+  },
+  {
+   "id": "P05",
+   "v1": true
+  },
+  {
+   "id": "P06",
+   "v1": true
+  },
+  {
+   "id": "P07",
+   "v1": true
+  },
+  {
+   "id": "P08",
+   "v1": true
+  },
+  {
+   "id": "P09",
+   "v1": true
+  },
+  {
+   "id": "P10",
+   "v1": true
+  },
+  {
+   "id": "P11",
+   "v1": true
+  },
+  {
+   "id": "P12",
+   "v1": true
+  },
+  {
+   "id": "P13",
+   "v1": true
+  },
+  {
+   "id": "P14",
+   "v1": true
+  },
+  {
+   "id": "P15",
+   "v1": true
+  },
+  {
+   "id": "P16",
+   "v1": true
+  },
+  {
+   "id": "P17",
+   "v1": true
+  },
+  {
+   "id": "P18",
+   "v1": true
+  },
+  {
+   "id": "P19",
+   "v1": false
+  },
+  {
+   "id": "P20",
+   "v1": true
+  },
+  {
+   "id": "P21",
+   "v1": true
+  },
+  {
+   "id": "P22",
+   "v1": true
+  },
+  {
+   "id": "P23",
+   "v1": false
+  },
+  {
+   "id": "P24",
+   "v1": true
+  },
+  {
+   "id": "P25",
+   "v1": false
+  },
+  {
+   "id": "P26",
+   "v1": true
+  },
+  {
+   "id": "P27",
+   "v1": true
+  },
+  {
+   "id": "P28",
+   "v1": true
+  },
+  {
+   "id": "P29",
+   "v1": true
+  }
+ ]
+}
