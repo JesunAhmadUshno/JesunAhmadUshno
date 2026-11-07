@@ -54,7 +54,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 ## Contribution
 
 <!--PROFILE:CONTRIBUTION-->
-84 public repositories. 156 merged pull requests.
+84 public repositories. 138 merged pull requests.
 <!--/PROFILE:CONTRIBUTION-->
 
 ## Contact
