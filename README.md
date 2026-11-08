@@ -14,14 +14,14 @@ That is the question under this work. The research spine is evaluation reliabili
 The judge below is the embedding judge from [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness). It has graded hundreds of answers and has never been checked against people. You are the check: read the case, then say whether the judge got it right. Your vote is recorded in this repository and the numbers below update within a minute.
 
 <!--PROFILE:JUDGE-->
-**Case 5 of 30** · a new case every day
+**Case 6 of 30** · a new case every day
 
-> **Question:** What did the 18th century Huguenot group call themselves?<br>
-> **Reference answer:** Camisards<br>
-> **System answered:** Camisards<br>
+> **Question:** How do cestids swim?<br>
+> **Reference answer:** by undulating their bodies as well as by the beating of their comb-rows.<br>
+> **System answered:** undulating<br>
 > **The judge said:** **PASS**
 
-Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-5710e8c8a58dae1900cd6b28%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-5710e8c8a58dae1900cd6b28%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
+Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-57265e97708984140094c3c5%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-57265e97708984140094c3c5%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
 
 This case so far: 0 agree, 0 disagree.
 
@@ -95,7 +95,7 @@ Every public project, checked every morning: is the live site answering, are the
 | 🟢 [terraform-for-ai-infrastructure](https://github.com/JesunAhmadUshno/terraform-for-ai-infrastructure) | [open](https://jesunahmadushno.github.io/terraform-for-ai-infrastructure/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
 | 🟢 [airflow-reliability-lab](https://github.com/JesunAhmadUshno/airflow-reliability-lab) | [open](https://jesunahmadushno.github.io/airflow-reliability-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
 | 🟢 [data-engineering-scale-lab](https://github.com/JesunAhmadUshno/data-engineering-scale-lab) | [open](https://jesunahmadushno.github.io/data-engineering-scale-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) | [open](https://jesunahmadushno.github.io/server-and-networking-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
+| 🟢 [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) | [open](https://jesunahmadushno.github.io/server-and-networking-lab/) | 🟢 up | 🟢 2/2 | 2026-11-08 |
 | 🟢 [cyber-range-lab](https://github.com/JesunAhmadUshno/cyber-range-lab) | [open](https://jesunahmadushno.github.io/cyber-range-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
 | 🟢 [fleet-capstone](https://github.com/JesunAhmadUshno/fleet-capstone) | [open](https://jesunahmadushno.github.io/fleet-capstone/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
 | 🟢 [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) | [open](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
@@ -161,11 +161,11 @@ Every public project, checked every morning: is the live site answering, are the
 ### Recently shipped
 
 <!--PROFILE:RECENT-->
+- `2026-11-08` [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) · [live](https://jesunahmadushno.github.io/server-and-networking-lab/)
+- `2026-11-07` [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) · [live](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/)
 - `2026-11-07` [distributed-training-lab](https://github.com/JesunAhmadUshno/distributed-training-lab) · [live](https://jesunahmadushno.github.io/distributed-training-lab/)
 - `2026-11-07` [NoPara](https://github.com/JesunAhmadUshno/NoPara) · [live](https://jesunahmadushno.github.io/NoPara/dashboard/)
 - `2026-11-07` [credit-risk-lab](https://github.com/JesunAhmadUshno/credit-risk-lab) · [live](https://jesunahmadushno.github.io/credit-risk-lab/lab/)
-- `2026-11-07` [dingdong-bms](https://github.com/JesunAhmadUshno/dingdong-bms) · [live](https://jesunahmadushno.github.io/dingdong-bms/)
-- `2026-11-07` [drawing-modality-test](https://github.com/JesunAhmadUshno/drawing-modality-test) · [live](https://jesunahmadushno.github.io/drawing-modality-test/dashboard/)
 <!--/PROFILE:RECENT-->
 
 ## The roadmap
@@ -229,7 +229,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 
 <sub>
 <!--PROFILE:PROVENANCE-->
-Panels regenerated on 2026-11-07 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
+Panels regenerated on 2026-11-08 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
 <!--/PROFILE:PROVENANCE-->
 </sub>
 
