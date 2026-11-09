@@ -51,7 +51,7 @@ jobs:
 
       - name: Verify the SVGs parse
         run: |
-          python3 -c "import xml.etree.ElementTree as ET; [ET.parse(f) for f in ['assets/hero.svg','assets/ledger-light.svg','assets/ledger-dark.svg','assets/divider.svg','assets/footer.svg','assets/lab-wall.svg']]; print('svgs parse')"
+          python3 -c "import xml.etree.ElementTree as ET; [ET.parse(f) for f in ['assets/hero.svg','assets/divider.svg','assets/footer.svg','assets/lab-wall.svg']]; print('svgs parse')"
 
       - name: Commit if changed
         run: |
