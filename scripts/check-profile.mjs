@@ -5,7 +5,7 @@
 // and every relative image path must resolve inside this repository.
 import fs from 'node:fs/promises';
 
-const files = ['README.md', 'assets/lab-wall.svg', 'assets/hero.svg', 'assets/ledger-light.svg', 'assets/ledger-dark.svg', 'assets/divider.svg', 'assets/footer.svg'];
+const files = ['README.md', 'assets/lab-wall.svg', 'assets/hero.svg', 'assets/divider.svg', 'assets/footer.svg'];
 const bannedWords = ['pioneer', 'premium', 'cutting-edge', 'world-class',
   'enterprise-grade', 'production-grade', 'passionate', 'innovative',
   'seamless', 'revolutionary', 'game-changing', 'rockstar', 'ninja', 'guru'];

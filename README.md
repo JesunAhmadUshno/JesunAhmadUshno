@@ -14,14 +14,14 @@ That is the question under this work. The research spine is evaluation reliabili
 The judge below is the embedding judge from [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness). It has graded hundreds of answers and has never been checked against people. You are the check: read the case, then say whether the judge got it right. Your vote is recorded in this repository and the numbers below update within a minute.
 
 <!--PROFILE:JUDGE-->
-**Case 6 of 30** · a new case every day
+**Case 7 of 30** · a new case every day
 
-> **Question:** How do cestids swim?<br>
-> **Reference answer:** by undulating their bodies as well as by the beating of their comb-rows.<br>
-> **System answered:** undulating<br>
-> **The judge said:** **PASS**
+> **Question:** Where was the Continental Edison Company located?<br>
+> **Reference answer:** France<br>
+> **System answered:** Tesla<br>
+> **The judge said:** **FAIL**
 
-Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-57265e97708984140094c3c5%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-57265e97708984140094c3c5%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
+Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56e0d54a7aa994140058e76a%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56e0d54a7aa994140058e76a%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
 
 This case so far: 0 agree, 0 disagree.
 
@@ -38,81 +38,93 @@ Every public project, checked every morning: is the live site answering, are the
 
 <!--PROFILE:BOARD-->
 <details open>
-<summary><b>Evaluation</b> · 10 of 11 live</summary>
+<summary><b>Evaluation</b> · 10 of 14 live</summary>
 
 | Project | Live | Site | Checks | Updated |
 | :--- | :--- | :--- | :--- | :--- |
-| 🟢 [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness) | [open](https://jesunahmadushno.github.io/rag-eval-harness/) | 🟢 up | 🟢 7/7 | 2026-11-07 |
-| 🟢 [experimentation-lab](https://github.com/JesunAhmadUshno/experimentation-lab) | [open](https://jesunahmadushno.github.io/experimentation-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [langgraph-vs-native-study](https://github.com/JesunAhmadUshno/langgraph-vs-native-study) | [open](https://jesunahmadushno.github.io/langgraph-vs-native-study/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [agent-evals-and-harness](https://github.com/JesunAhmadUshno/agent-evals-and-harness) | [open](https://jesunahmadushno.github.io/agent-evals-and-harness/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [recommender-evaluation-lab](https://github.com/JesunAhmadUshno/recommender-evaluation-lab) | [open](https://jesunahmadushno.github.io/recommender-evaluation-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [vector-systems-benchmark](https://github.com/JesunAhmadUshno/vector-systems-benchmark) | [open](https://jesunahmadushno.github.io/vector-systems-benchmark/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| ⚪ [pytorch-depth-lab](https://github.com/JesunAhmadUshno/pytorch-depth-lab) | · | · | 🟢 1/1 | 2026-11-07 |
-| 🟢 [gpu-first-principles-lab](https://github.com/JesunAhmadUshno/gpu-first-principles-lab) | [open](https://jesunahmadushno.github.io/gpu-first-principles-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [llm-observability](https://github.com/JesunAhmadUshno/llm-observability) | [open](https://jesunahmadushno.github.io/llm-observability/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [guardrails-lab](https://github.com/JesunAhmadUshno/guardrails-lab) | [open](https://jesunahmadushno.github.io/guardrails-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
+| 🟢 [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness) | [open](https://jesunahmadushno.github.io/rag-eval-harness/) | 🟢 up | 🟢 9/9 | 2026-11-09 |
+| 🟢 [experimentation-lab](https://github.com/JesunAhmadUshno/experimentation-lab) | [open](https://jesunahmadushno.github.io/experimentation-lab/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [langgraph-vs-native-study](https://github.com/JesunAhmadUshno/langgraph-vs-native-study) | [open](https://jesunahmadushno.github.io/langgraph-vs-native-study/) | 🟢 up | 🟢 9/9 | 2026-11-09 |
+| 🟢 [agent-evals-and-harness](https://github.com/JesunAhmadUshno/agent-evals-and-harness) | [open](https://jesunahmadushno.github.io/agent-evals-and-harness/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
+| 🟢 [recommender-evaluation-lab](https://github.com/JesunAhmadUshno/recommender-evaluation-lab) | [open](https://jesunahmadushno.github.io/recommender-evaluation-lab/) | 🟢 up | 🟢 9/9 | 2026-11-08 |
+| 🟢 [vector-systems-benchmark](https://github.com/JesunAhmadUshno/vector-systems-benchmark) | [open](https://jesunahmadushno.github.io/vector-systems-benchmark/) | 🟢 up | 🟢 9/9 | 2026-11-09 |
+| ⚪ [pytorch-depth-lab](https://github.com/JesunAhmadUshno/pytorch-depth-lab) | · | · | 🟢 6/6 | 2026-11-09 |
+| 🟢 [gpu-first-principles-lab](https://github.com/JesunAhmadUshno/gpu-first-principles-lab) | [open](https://jesunahmadushno.github.io/gpu-first-principles-lab/) | 🟢 up | 🟢 8/8 | 2026-11-09 |
+| 🟢 [llm-observability](https://github.com/JesunAhmadUshno/llm-observability) | [open](https://jesunahmadushno.github.io/llm-observability/) | 🟢 up | 🟢 15/15 | 2026-11-08 |
+| 🟢 [guardrails-lab](https://github.com/JesunAhmadUshno/guardrails-lab) | [open](https://jesunahmadushno.github.io/guardrails-lab/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
 | 🟢 [pattern19-wk1-model-gate](https://github.com/JesunAhmadUshno/pattern19-wk1-model-gate) | [open](https://jesunahmadushno.github.io/pattern19-wk1-model-gate/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
+| ⚪ [document-intelligence-lab](https://github.com/JesunAhmadUshno/document-intelligence-lab) | · | · | 🟢 4/4 | 2026-11-09 |
+| ⚪ [mlops-evidence-lab](https://github.com/JesunAhmadUshno/mlops-evidence-lab) | · | · | 🟢 6/6 | 2026-11-09 |
+| ⚪ [recommender-lab-v2](https://github.com/JesunAhmadUshno/recommender-lab-v2) | · | · | 🟢 1/1 | 2026-11-08 |
 
 </details>
 
 <details>
-<summary><b>LLMs + Agents</b> · 16 of 17 live</summary>
+<summary><b>LLMs + Agents</b> · 17 of 19 live</summary>
 
 | Project | Live | Site | Checks | Updated |
 | :--- | :--- | :--- | :--- | :--- |
-| 🟢 [agent-from-scratch](https://github.com/JesunAhmadUshno/agent-from-scratch) | [open](https://jesunahmadushno.github.io/agent-from-scratch/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
-| 🟢 [agent-memory-lab](https://github.com/JesunAhmadUshno/agent-memory-lab) | [open](https://jesunahmadushno.github.io/agent-memory-lab/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
-| 🟢 [orchestrator-lab](https://github.com/JesunAhmadUshno/orchestrator-lab) | [open](https://jesunahmadushno.github.io/orchestrator-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [mcp-toolkit](https://github.com/JesunAhmadUshno/mcp-toolkit) | [open](https://jesunahmadushno.github.io/mcp-toolkit/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
+| 🟢 [agent-from-scratch](https://github.com/JesunAhmadUshno/agent-from-scratch) | [open](https://jesunahmadushno.github.io/agent-from-scratch/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [agent-memory-lab](https://github.com/JesunAhmadUshno/agent-memory-lab) | [open](https://jesunahmadushno.github.io/agent-memory-lab/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [orchestrator-lab](https://github.com/JesunAhmadUshno/orchestrator-lab) | [open](https://jesunahmadushno.github.io/orchestrator-lab/) | 🟢 up | 🟢 7/7 | 2026-11-09 |
+| 🟢 [mcp-toolkit](https://github.com/JesunAhmadUshno/mcp-toolkit) | [open](https://jesunahmadushno.github.io/mcp-toolkit/) | 🟢 up | 🟢 7/7 | 2026-11-09 |
 | 🟢 [pattern19-wk1-mcp-server](https://github.com/JesunAhmadUshno/pattern19-wk1-mcp-server) | [open](https://jesunahmadushno.github.io/pattern19-wk1-mcp-server/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
-| 🟢 [rag-foundation](https://github.com/JesunAhmadUshno/rag-foundation) | [open](https://jesunahmadushno.github.io/rag-foundation/) | 🟢 up | 🟢 10/10 | 2026-11-07 |
-| 🟢 [structured-outputs-lab](https://github.com/JesunAhmadUshno/structured-outputs-lab) | [open](https://jesunahmadushno.github.io/structured-outputs-lab/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
-| 🟢 [document-intelligence](https://github.com/JesunAhmadUshno/document-intelligence) | [open](https://jesunahmadushno.github.io/document-intelligence/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [finetune-lab](https://github.com/JesunAhmadUshno/finetune-lab) | [open](https://jesunahmadushno.github.io/finetune-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [post-training-data-lab](https://github.com/JesunAhmadUshno/post-training-data-lab) | [open](https://jesunahmadushno.github.io/post-training-data-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [rl-environments-and-verifiers](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers) | [open](https://jesunahmadushno.github.io/rl-environments-and-verifiers/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
-| 🟠 [llm-from-scratch](https://github.com/JesunAhmadUshno/llm-from-scratch) | [open](https://jesunahmadushno.github.io/llm-from-scratch/) | 🟢 up | 🟠 10/11 (CI) | 2026-11-07 |
-| 🟢 [tokenizer-lab](https://github.com/JesunAhmadUshno/tokenizer-lab) | [open](https://jesunahmadushno.github.io/tokenizer-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [multimodal-lab](https://github.com/JesunAhmadUshno/multimodal-lab) | [open](https://jesunahmadushno.github.io/multimodal-lab/) | 🟢 up | 🟢 12/12 | 2026-11-07 |
-| 🟢 [voice-agent-lab](https://github.com/JesunAhmadUshno/voice-agent-lab) | [open](https://jesunahmadushno.github.io/voice-agent-lab/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
-| 🟢 [local-first-ai](https://github.com/JesunAhmadUshno/local-first-ai) | [open](https://jesunahmadushno.github.io/local-first-ai/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
+| 🟢 [rag-foundation](https://github.com/JesunAhmadUshno/rag-foundation) | [open](https://jesunahmadushno.github.io/rag-foundation/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
+| 🟢 [structured-outputs-lab](https://github.com/JesunAhmadUshno/structured-outputs-lab) | [open](https://jesunahmadushno.github.io/structured-outputs-lab/) | 🟢 up | 🟢 10/10 | 2026-11-09 |
+| 🟢 [document-intelligence](https://github.com/JesunAhmadUshno/document-intelligence) | [open](https://jesunahmadushno.github.io/document-intelligence/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
+| 🟢 [finetune-lab](https://github.com/JesunAhmadUshno/finetune-lab) | [open](https://jesunahmadushno.github.io/finetune-lab/) | 🟢 up | 🟢 9/9 | 2026-11-09 |
+| 🟢 [post-training-data-lab](https://github.com/JesunAhmadUshno/post-training-data-lab) | [open](https://jesunahmadushno.github.io/post-training-data-lab/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
+| 🟢 [rl-environments-and-verifiers](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers) | [open](https://jesunahmadushno.github.io/rl-environments-and-verifiers/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [llm-from-scratch](https://github.com/JesunAhmadUshno/llm-from-scratch) | [open](https://jesunahmadushno.github.io/llm-from-scratch/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [tokenizer-lab](https://github.com/JesunAhmadUshno/tokenizer-lab) | [open](https://jesunahmadushno.github.io/tokenizer-lab/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
+| 🟢 [multimodal-lab](https://github.com/JesunAhmadUshno/multimodal-lab) | [open](https://jesunahmadushno.github.io/multimodal-lab/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [voice-agent-lab](https://github.com/JesunAhmadUshno/voice-agent-lab) | [open](https://jesunahmadushno.github.io/voice-agent-lab/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [local-first-ai](https://github.com/JesunAhmadUshno/local-first-ai) | [open](https://jesunahmadushno.github.io/local-first-ai/) | 🟢 up | 🟢 12/12 | 2026-11-08 |
 | 🟢 [muse-n8n-extraction-101](https://github.com/JesunAhmadUshno/muse-n8n-extraction-101) | [open](https://jesunahmadushno.github.io/muse-n8n-extraction-101/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
+| ⚪ [llama-index-doc-lab](https://github.com/JesunAhmadUshno/llama-index-doc-lab) | · | · | 🟢 4/4 | 2026-11-09 |
+| ⚪ [langchain-direct-study](https://github.com/JesunAhmadUshno/langchain-direct-study) | · | · | 🟢 6/6 | 2026-11-09 |
 
 </details>
 
 <details>
-<summary><b>Infra + Systems</b> · 12 of 13 live</summary>
+<summary><b>Infra + Systems</b> · 13 of 19 live</summary>
 
 | Project | Live | Site | Checks | Updated |
 | :--- | :--- | :--- | :--- | :--- |
-| 🟢 [vllm-serving-lab](https://github.com/JesunAhmadUshno/vllm-serving-lab) | [open](https://jesunahmadushno.github.io/vllm-serving-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [quantization-lab](https://github.com/JesunAhmadUshno/quantization-lab) | [open](https://jesunahmadushno.github.io/quantization-lab/) | 🟢 up | 🟢 10/10 | 2026-11-07 |
-| 🟢 [cuda-kernels-lab](https://github.com/JesunAhmadUshno/cuda-kernels-lab) | [open](https://jesunahmadushno.github.io/cuda-kernels-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [distributed-training-lab](https://github.com/JesunAhmadUshno/distributed-training-lab) | [open](https://jesunahmadushno.github.io/distributed-training-lab/) | 🟢 up | 🟢 12/12 | 2026-11-07 |
-| 🟢 [ml-platform-lab](https://github.com/JesunAhmadUshno/ml-platform-lab) | [open](https://jesunahmadushno.github.io/ml-platform-lab/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
-| 🟠 [systems-languages-lab](https://github.com/JesunAhmadUshno/systems-languages-lab) | [open](https://jesunahmadushno.github.io/systems-languages-lab/) | 🟢 up | 🟠 8/9 (CI) | 2026-11-07 |
-| 🟢 [terraform-for-ai-infrastructure](https://github.com/JesunAhmadUshno/terraform-for-ai-infrastructure) | [open](https://jesunahmadushno.github.io/terraform-for-ai-infrastructure/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [airflow-reliability-lab](https://github.com/JesunAhmadUshno/airflow-reliability-lab) | [open](https://jesunahmadushno.github.io/airflow-reliability-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [data-engineering-scale-lab](https://github.com/JesunAhmadUshno/data-engineering-scale-lab) | [open](https://jesunahmadushno.github.io/data-engineering-scale-lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) | [open](https://jesunahmadushno.github.io/server-and-networking-lab/) | 🟢 up | 🟢 2/2 | 2026-11-08 |
-| 🟢 [cyber-range-lab](https://github.com/JesunAhmadUshno/cyber-range-lab) | [open](https://jesunahmadushno.github.io/cyber-range-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
-| 🟢 [fleet-capstone](https://github.com/JesunAhmadUshno/fleet-capstone) | [open](https://jesunahmadushno.github.io/fleet-capstone/) | 🟢 up | 🟢 11/11 | 2026-11-07 |
-| 🟢 [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) | [open](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
+| 🟢 [vllm-serving-lab](https://github.com/JesunAhmadUshno/vllm-serving-lab) | [open](https://jesunahmadushno.github.io/vllm-serving-lab/) | 🟢 up | 🟢 12/12 | 2026-11-08 |
+| 🟢 [quantization-lab](https://github.com/JesunAhmadUshno/quantization-lab) | [open](https://jesunahmadushno.github.io/quantization-lab/) | 🟢 up | 🟢 13/13 | 2026-11-09 |
+| 🟢 [cuda-kernels-lab](https://github.com/JesunAhmadUshno/cuda-kernels-lab) | [open](https://jesunahmadushno.github.io/cuda-kernels-lab/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
+| 🟢 [distributed-training-lab](https://github.com/JesunAhmadUshno/distributed-training-lab) | [open](https://jesunahmadushno.github.io/distributed-training-lab/) | 🟢 up | 🟢 14/14 | 2026-11-08 |
+| 🟢 [ml-platform-lab](https://github.com/JesunAhmadUshno/ml-platform-lab) | [open](https://jesunahmadushno.github.io/ml-platform-lab/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [systems-languages-lab](https://github.com/JesunAhmadUshno/systems-languages-lab) | [open](https://jesunahmadushno.github.io/systems-languages-lab/) | 🟢 up | 🟢 12/12 | 2026-11-08 |
+| 🟢 [terraform-for-ai-infrastructure](https://github.com/JesunAhmadUshno/terraform-for-ai-infrastructure) | [open](https://jesunahmadushno.github.io/terraform-for-ai-infrastructure/) | 🟢 up | 🟢 7/7 | 2026-11-08 |
+| 🟢 [airflow-reliability-lab](https://github.com/JesunAhmadUshno/airflow-reliability-lab) | [open](https://jesunahmadushno.github.io/airflow-reliability-lab/) | 🟢 up | 🟢 9/9 | 2026-11-09 |
+| 🟢 [data-engineering-scale-lab](https://github.com/JesunAhmadUshno/data-engineering-scale-lab) | [open](https://jesunahmadushno.github.io/data-engineering-scale-lab/) | 🟢 up | 🟢 9/9 | 2026-11-09 |
+| 🟢 [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) | [open](https://jesunahmadushno.github.io/server-and-networking-lab/) | 🟢 up | 🟢 7/7 | 2026-11-08 |
+| 🟢 [cyber-range-lab](https://github.com/JesunAhmadUshno/cyber-range-lab) | [open](https://jesunahmadushno.github.io/cyber-range-lab/) | 🟢 up | 🟢 12/12 | 2026-11-08 |
+| 🟢 [fleet-capstone](https://github.com/JesunAhmadUshno/fleet-capstone) | [open](https://jesunahmadushno.github.io/fleet-capstone/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
+| 🟢 [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) | [open](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/) | 🟢 up | 🟢 2/2 | 2026-11-08 |
+| ⚪ [beam-pipeline-lab](https://github.com/JesunAhmadUshno/beam-pipeline-lab) | · | · | 🟢 6/6 | 2026-11-09 |
+| ⚪ [boto3-aws-emulation-lab](https://github.com/JesunAhmadUshno/boto3-aws-emulation-lab) | · | · | 🟢 6/6 | 2026-11-09 |
+| ⚪ [hadoop-scale-lab](https://github.com/JesunAhmadUshno/hadoop-scale-lab) | · | · | 🟢 11/11 | 2026-11-08 |
+| ⚪ [kafka-streaming-lab](https://github.com/JesunAhmadUshno/kafka-streaming-lab) | · | · | 🟢 6/6 | 2026-11-09 |
+| ⚪ [ray-distributed-lab](https://github.com/JesunAhmadUshno/ray-distributed-lab) | · | · | 🟢 1/1 | 2026-11-08 |
+| ⚪ [triton-kernel-study](https://github.com/JesunAhmadUshno/triton-kernel-study) | · | · | 🟢 1/1 | 2026-11-08 |
 
 </details>
 
 <details>
-<summary><b>Applied ML</b> · 6 of 6 live</summary>
+<summary><b>Applied ML</b> · 6 of 7 live</summary>
 
 | Project | Live | Site | Checks | Updated |
 | :--- | :--- | :--- | :--- | :--- |
-| 🟢 [credit-risk-lab](https://github.com/JesunAhmadUshno/credit-risk-lab) | [open](https://jesunahmadushno.github.io/credit-risk-lab/lab/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
-| 🟢 [signal-ml-lab](https://github.com/JesunAhmadUshno/signal-ml-lab) | [open](https://jesunahmadushno.github.io/signal-ml-lab/) | 🟢 up | 🟢 9/9 | 2026-11-07 |
+| 🟢 [credit-risk-lab](https://github.com/JesunAhmadUshno/credit-risk-lab) | [open](https://jesunahmadushno.github.io/credit-risk-lab/lab/) | 🟢 up | 🟢 12/12 | 2026-11-09 |
+| 🟢 [signal-ml-lab](https://github.com/JesunAhmadUshno/signal-ml-lab) | [open](https://jesunahmadushno.github.io/signal-ml-lab/) | 🟢 up | 🟢 15/15 | 2026-11-09 |
 | 🟢 [drawing-modality-test](https://github.com/JesunAhmadUshno/drawing-modality-test) | [open](https://jesunahmadushno.github.io/drawing-modality-test/dashboard/) | 🟢 up | 🟢 2/2 | 2026-11-07 |
 | 🟢 [Indoor-Positioning-Algorithms](https://github.com/JesunAhmadUshno/Indoor-Positioning-Algorithms) | [open](https://jesunahmadushno.github.io/Indoor-Positioning-Algorithms/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
 | 🟢 [Automated-PDF-Report-Generation-from-Jupyter-Notebook](https://github.com/JesunAhmadUshno/Automated-PDF-Report-Generation-from-Jupyter-Notebook) | [open](https://jesunahmadushno.github.io/Automated-PDF-Report-Generation-from-Jupyter-Notebook/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
 | 🟢 [toronto\_bikeshare\_station\_info](https://github.com/JesunAhmadUshno/toronto_bikeshare_station_info) | [open](https://jesunahmadushno.github.io/toronto_bikeshare_station_info/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
+| ⚪ [xgboost-credit-benchmark](https://github.com/JesunAhmadUshno/xgboost-credit-benchmark) | · | · | 🟢 6/6 | 2026-11-09 |
 
 </details>
 
@@ -161,25 +173,19 @@ Every public project, checked every morning: is the live site answering, are the
 ### Recently shipped
 
 <!--PROFILE:RECENT-->
-- `2026-11-08` [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) · [live](https://jesunahmadushno.github.io/server-and-networking-lab/)
-- `2026-11-07` [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) · [live](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/)
-- `2026-11-07` [distributed-training-lab](https://github.com/JesunAhmadUshno/distributed-training-lab) · [live](https://jesunahmadushno.github.io/distributed-training-lab/)
-- `2026-11-07` [NoPara](https://github.com/JesunAhmadUshno/NoPara) · [live](https://jesunahmadushno.github.io/NoPara/dashboard/)
-- `2026-11-07` [credit-risk-lab](https://github.com/JesunAhmadUshno/credit-risk-lab) · [live](https://jesunahmadushno.github.io/credit-risk-lab/lab/)
+- `2026-11-09` [experimentation-lab](https://github.com/JesunAhmadUshno/experimentation-lab) · [live](https://jesunahmadushno.github.io/experimentation-lab/)
+- `2026-11-09` [signal-ml-lab](https://github.com/JesunAhmadUshno/signal-ml-lab) · [live](https://jesunahmadushno.github.io/signal-ml-lab/)
+- `2026-11-09` [xgboost-credit-benchmark](https://github.com/JesunAhmadUshno/xgboost-credit-benchmark)
+- `2026-11-09` [beam-pipeline-lab](https://github.com/JesunAhmadUshno/beam-pipeline-lab)
+- `2026-11-09` [llama-index-doc-lab](https://github.com/JesunAhmadUshno/llama-index-doc-lab)
 <!--/PROFILE:RECENT-->
 
 ## The roadmap
 
-Twenty-nine projects, one method: a research question, pre-registered hypotheses, measured results, and a published verdict. Learn, Build, Deepen, in that order. A filled cell is a project at v1.0.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/ledger-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/ledger-light.svg">
-  <img alt="Roadmap ledger" src="assets/ledger-light.svg" width="100%">
-</picture>
+Forty-eight repos, one standard: a research question, a plan locked before any result where the history proves it, measured results, and a verdict each repo has to earn. Public pages show only that verdict; no repo keeps a level it has not re-earned under [the standard](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index/blob/main/docs/METHOD.md).
 
 <!--PROFILE:ROADMAP-->
-27 of 29 projects at v1.0.
+Standard v2 adopted on 2026-11-08; repos re-verified under it: 48 of 48. v1.0 Released: 1 · Evaluated: 2 · Functional: 39 · Proposed: 1 · Draft: 5. Plan locked before results: 20. [Every repo and its verdict](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index).
 <!--/PROFILE:ROADMAP-->
 
 ## Measured results
@@ -220,7 +226,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 ## Contribution
 
 <!--PROFILE:CONTRIBUTION-->
-85 public repositories. 138 merged pull requests.
+97 public repositories. 221 merged pull requests.
 <!--/PROFILE:CONTRIBUTION-->
 
 ## Contact
@@ -229,7 +235,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 
 <sub>
 <!--PROFILE:PROVENANCE-->
-Panels regenerated on 2026-11-08 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
+Panels regenerated on 2026-11-09 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
 <!--/PROFILE:PROVENANCE-->
 </sub>
 

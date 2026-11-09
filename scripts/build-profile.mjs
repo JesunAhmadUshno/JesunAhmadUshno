@@ -4,7 +4,7 @@
 // missing, this script exits non-zero before writing anything, so
 // the published panels never go partial or guessed. Sources: the
 // account's public data through the GitHub API, data/roadmap.json
-// in this repository for the ledger grid, and assets/portrait.jpg.
+// in this repository for the verdict count, and assets/portrait.jpg.
 
 import fs from 'node:fs/promises';
 import { dashboardFromReadme, ciSummary, group, wallSvg, boardMd, recentMd, judgeMd, swapBlock } from './lab.mjs';
@@ -67,25 +67,6 @@ function mulberry32(a) {
     t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
     return ((t ^ t >>> 14) >>> 0) / 4294967296;
   };
-}
-
-function ledgerSvg(projects, dark) {
-  const W = 1200, cellW = 102, cellH = 62, gapX = 8, gapY = 10, cols = 10;
-  const rows = Math.ceil(projects.length / cols);
-  const H = rows * cellH + (rows - 1) * gapY + 24;
-  let cells = '';
-  projects.forEach((p, i) => {
-    const x = 4 + (i % cols) * (cellW + gapX);
-    const y = 12 + Math.floor(i / cols) * (cellH + gapY);
-    const delay = (i * 0.18).toFixed(2);
-    if (p.v1) {
-      cells += `<rect class="cell" style="animation-delay:${delay}s" x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="#FF4655" fill-opacity=".18" stroke="#FF4655"/><text x="${x + cellW / 2}" y="${y + 39}" text-anchor="middle" font-family="'Courier New', monospace" font-size="21" fill="#F5F6F8">${p.id}</text>`;
-    } else {
-      cells += `<rect x="${x}" y="${y}" width="${cellW}" height="${cellH}" fill="none" stroke="#FF4655" stroke-opacity=".5" stroke-dasharray="5 5"/><text x="${x + cellW / 2}" y="${y + 39}" text-anchor="middle" font-family="'Courier New', monospace" font-size="21" fill="#FF8A8A">${p.id}</text>`;
-    }
-  });
-  const style = `<style>.cell { animation: pulse 3.6s ease-in-out infinite; } @keyframes pulse { 0%, 100% { fill-opacity: .10; } 50% { fill-opacity: .30; } } @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Roadmap ledger: ${projects.filter(p => p.v1).length} of ${projects.length} projects at v1.0">\n<rect width="${W}" height="${H}" fill="#050507"/>\n${style}\n${cells}\n</svg>\n`;
 }
 
 function chip(x, y, text) {
@@ -200,12 +181,18 @@ if (!portraitB64) throw new Error('portrait asset is empty');
 
 const roadmap = JSON.parse(await fs.readFile('data/roadmap.json', 'utf8'));
 const wordmark = JSON.parse(await fs.readFile('assets/wordmark-paths.json', 'utf8'));
-const projects = roadmap.projects;
-const atV1 = projects.filter(p => p.v1).length;
+// Standard v2: the count line and verdict tally come from data/roadmap.json.
+const LEVELS = ['v1.0 Released', 'Evaluated', 'Functional', 'Proposed', 'Draft'];
+const level = v => LEVELS.find(l => v.startsWith(l));
+const unknown = roadmap.repos.filter(r => !level(r.verdict));
+if (unknown.length) throw new Error(`unknown verdict in data/roadmap.json: ${unknown.map(r => r.repo).join(', ')}`);
+const tally = LEVELS.map(l => [l, roadmap.repos.filter(r => level(r.verdict) === l).length]).filter(([, n]) => n);
+const locked = roadmap.repos.filter(r => r.plan_locked).length;
+const roadmapLine = `Standard v2 adopted on ${roadmap.adopted}; repos re-verified under it: ${roadmap.repos.length} of ${roadmap.repos.length}. ` +
+  `${tally.map(([l, n]) => `${l}: ${n}`).join(' · ')}. Plan locked before results: ${locked}. ` +
+  `[Every repo and its verdict](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index).`;
 
 await fs.writeFile('assets/hero.svg', heroSvg({ repos, merged, latestRepo, portraitB64, wordmark }));
-await fs.writeFile('assets/ledger-light.svg', ledgerSvg(projects, false));
-await fs.writeFile('assets/ledger-dark.svg', ledgerSvg(projects, true));
 
 const tracks = JSON.parse(await fs.readFile('data/tracks.json', 'utf8'));
 const skip = new Set(tracks.exclude);
@@ -220,11 +207,11 @@ const votes = JSON.parse(await fs.readFile('data/votes.json', 'utf8'));
 
 const today = new Date().toISOString().slice(0, 10);
 let md = await fs.readFile('README.md', 'utf8');
-md = swapBlock(md, 'ROADMAP', `${atV1} of ${projects.length} projects at v1.0.`);
+md = swapBlock(md, 'ROADMAP', roadmapLine);
 md = swapBlock(md, 'CONTRIBUTION', `${repos} public repositories. ${merged} merged pull requests.`);
 md = swapBlock(md, 'BOARD', boardMd(groups));
 md = swapBlock(md, 'RECENT', recentMd(groups));
 md = swapBlock(md, 'JUDGE', judgeMd(judgeData, votes, now));
 md = swapBlock(md, 'PROVENANCE', `Panels regenerated on ${today} by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.`);
 await fs.writeFile('README.md', md);
-console.log(`panels rebuilt: repos=${repos} mergedPRs=${merged} roadmap=${atV1}/${projects.length}`);
+console.log(`panels rebuilt: repos=${repos} mergedPRs=${merged} roadmap=${roadmap.repos.length} repos`);
