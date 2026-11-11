@@ -14,14 +14,14 @@ That is the question under this work. The research spine is evaluation reliabili
 The judge below is the embedding judge from [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness). It has graded hundreds of answers and has never been checked against people. You are the check: read the case, then say whether the judge got it right. Your vote is recorded in this repository and the numbers below update within a minute.
 
 <!--PROFILE:JUDGE-->
-**Case 8 of 30** · a new case every day
+**Case 9 of 30** · a new case every day
 
-> **Question:** What was the naval base called?<br>
-> **Reference answer:** Dyrrachium<br>
-> **System answered:** Murdoch<br>
+> **Question:** Case complexity likelihoods provide variable probabilities of what general measure?<br>
+> **Reference answer:** complexity measure<br>
+> **System answered:** three<br>
 > **The judge said:** **FAIL**
 
-Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56de1563cffd8e1900b4b5c3%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56de1563cffd8e1900b4b5c3%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
+Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56e1b8f3e3433e14004230e7%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56e1b8f3e3433e14004230e7%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
 
 This case so far: 0 agree, 0 disagree.
 
@@ -124,7 +124,7 @@ Every public project, checked every morning: is the live site answering, are the
 | 🟢 [Indoor-Positioning-Algorithms](https://github.com/JesunAhmadUshno/Indoor-Positioning-Algorithms) | [open](https://jesunahmadushno.github.io/Indoor-Positioning-Algorithms/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
 | 🟢 [Automated-PDF-Report-Generation-from-Jupyter-Notebook](https://github.com/JesunAhmadUshno/Automated-PDF-Report-Generation-from-Jupyter-Notebook) | [open](https://jesunahmadushno.github.io/Automated-PDF-Report-Generation-from-Jupyter-Notebook/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
 | 🟢 [toronto\_bikeshare\_station\_info](https://github.com/JesunAhmadUshno/toronto_bikeshare_station_info) | [open](https://jesunahmadushno.github.io/toronto_bikeshare_station_info/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
-| 🟠 [xgboost-credit-benchmark](https://github.com/JesunAhmadUshno/xgboost-credit-benchmark) | · | · | 🟠 7/8 (pip in /. - Update #1691037510) | 2026-11-09 |
+| ⚪ [xgboost-credit-benchmark](https://github.com/JesunAhmadUshno/xgboost-credit-benchmark) | · | · | 🟢 8/8 | 2026-11-09 |
 
 </details>
 
@@ -235,7 +235,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 
 <sub>
 <!--PROFILE:PROVENANCE-->
-Panels regenerated on 2026-11-10 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
+Panels regenerated on 2026-11-11 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
 <!--/PROFILE:PROVENANCE-->
 </sub>
 
