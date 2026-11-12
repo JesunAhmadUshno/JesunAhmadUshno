@@ -14,14 +14,14 @@ That is the question under this work. The research spine is evaluation reliabili
 The judge below is the embedding judge from [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness). It has graded hundreds of answers and has never been checked against people. You are the check: read the case, then say whether the judge got it right. Your vote is recorded in this repository and the numbers below update within a minute.
 
 <!--PROFILE:JUDGE-->
-**Case 9 of 30** · a new case every day
+**Case 10 of 30** · a new case every day
 
-> **Question:** Case complexity likelihoods provide variable probabilities of what general measure?<br>
-> **Reference answer:** complexity measure<br>
-> **System answered:** three<br>
-> **The judge said:** **FAIL**
+> **Question:** Which organization released a California Earthquake forecast?<br>
+> **Reference answer:** USGS<br>
+> **System answered:** USGS<br>
+> **The judge said:** **PASS**
 
-Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56e1b8f3e3433e14004230e7%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56e1b8f3e3433e14004230e7%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
+Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-5705ffde52bb891400689787%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-5705ffde52bb891400689787%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
 
 This case so far: 0 agree, 0 disagree.
 
@@ -42,10 +42,10 @@ Every public project, checked every morning: is the live site answering, are the
 
 | Project | Live | Site | Checks | Updated |
 | :--- | :--- | :--- | :--- | :--- |
-| 🟢 [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness) | [open](https://jesunahmadushno.github.io/rag-eval-harness/) | 🟢 up | 🟢 10/10 | 2026-11-09 |
+| 🟢 [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness) | [open](https://jesunahmadushno.github.io/rag-eval-harness/) | 🟢 up | 🟢 10/10 | 2026-11-11 |
 | 🟢 [experimentation-lab](https://github.com/JesunAhmadUshno/experimentation-lab) | [open](https://jesunahmadushno.github.io/experimentation-lab/) | 🟢 up | 🟢 16/16 | 2026-11-09 |
 | 🟢 [langgraph-vs-native-study](https://github.com/JesunAhmadUshno/langgraph-vs-native-study) | [open](https://jesunahmadushno.github.io/langgraph-vs-native-study/) | 🟢 up | 🟢 11/11 | 2026-11-09 |
-| 🟢 [agent-evals-and-harness](https://github.com/JesunAhmadUshno/agent-evals-and-harness) | [open](https://jesunahmadushno.github.io/agent-evals-and-harness/) | 🟢 up | 🟢 13/13 | 2026-11-09 |
+| 🟢 [agent-evals-and-harness](https://github.com/JesunAhmadUshno/agent-evals-and-harness) | [open](https://jesunahmadushno.github.io/agent-evals-and-harness/) | 🟢 up | 🟢 15/15 | 2026-11-11 |
 | 🟢 [recommender-evaluation-lab](https://github.com/JesunAhmadUshno/recommender-evaluation-lab) | [open](https://jesunahmadushno.github.io/recommender-evaluation-lab/) | 🟢 up | 🟢 9/9 | 2026-11-08 |
 | 🟢 [vector-systems-benchmark](https://github.com/JesunAhmadUshno/vector-systems-benchmark) | [open](https://jesunahmadushno.github.io/vector-systems-benchmark/) | 🟢 up | 🟢 10/10 | 2026-11-09 |
 | ⚪ [pytorch-depth-lab](https://github.com/JesunAhmadUshno/pytorch-depth-lab) | · | · | 🟢 8/8 | 2026-11-09 |
@@ -70,16 +70,16 @@ Every public project, checked every morning: is the live site answering, are the
 | 🟢 [mcp-toolkit](https://github.com/JesunAhmadUshno/mcp-toolkit) | [open](https://jesunahmadushno.github.io/mcp-toolkit/) | 🟢 up | 🟢 8/8 | 2026-11-09 |
 | 🟢 [pattern19-wk1-mcp-server](https://github.com/JesunAhmadUshno/pattern19-wk1-mcp-server) | [open](https://jesunahmadushno.github.io/pattern19-wk1-mcp-server/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
 | 🟢 [rag-foundation](https://github.com/JesunAhmadUshno/rag-foundation) | [open](https://jesunahmadushno.github.io/rag-foundation/) | 🟢 up | 🟢 11/11 | 2026-11-09 |
-| 🟢 [structured-outputs-lab](https://github.com/JesunAhmadUshno/structured-outputs-lab) | [open](https://jesunahmadushno.github.io/structured-outputs-lab/) | 🟢 up | 🟢 11/11 | 2026-11-09 |
+| 🟢 [structured-outputs-lab](https://github.com/JesunAhmadUshno/structured-outputs-lab) | [open](https://jesunahmadushno.github.io/structured-outputs-lab/) | 🟢 up | 🟢 15/15 | 2026-11-11 |
 | 🟢 [document-intelligence](https://github.com/JesunAhmadUshno/document-intelligence) | [open](https://jesunahmadushno.github.io/document-intelligence/) | 🟢 up | 🟢 13/13 | 2026-11-09 |
-| 🟢 [finetune-lab](https://github.com/JesunAhmadUshno/finetune-lab) | [open](https://jesunahmadushno.github.io/finetune-lab/) | 🟢 up | 🟢 11/11 | 2026-11-09 |
+| 🟢 [finetune-lab](https://github.com/JesunAhmadUshno/finetune-lab) | [open](https://jesunahmadushno.github.io/finetune-lab/) | 🟢 up | 🟢 16/16 | 2026-11-11 |
 | 🟢 [post-training-data-lab](https://github.com/JesunAhmadUshno/post-training-data-lab) | [open](https://jesunahmadushno.github.io/post-training-data-lab/) | 🟢 up | 🟢 13/13 | 2026-11-09 |
-| 🟢 [rl-environments-and-verifiers](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers) | [open](https://jesunahmadushno.github.io/rl-environments-and-verifiers/) | 🟢 up | 🟢 15/15 | 2026-11-09 |
-| 🟢 [llm-from-scratch](https://github.com/JesunAhmadUshno/llm-from-scratch) | [open](https://jesunahmadushno.github.io/llm-from-scratch/) | 🟢 up | 🟢 15/15 | 2026-11-09 |
-| 🟢 [tokenizer-lab](https://github.com/JesunAhmadUshno/tokenizer-lab) | [open](https://jesunahmadushno.github.io/tokenizer-lab/) | 🟢 up | 🟢 13/13 | 2026-11-09 |
+| 🟢 [rl-environments-and-verifiers](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers) | [open](https://jesunahmadushno.github.io/rl-environments-and-verifiers/) | 🟢 up | 🟢 15/15 | 2026-11-11 |
+| 🟢 [llm-from-scratch](https://github.com/JesunAhmadUshno/llm-from-scratch) | [open](https://jesunahmadushno.github.io/llm-from-scratch/) | 🟢 up | 🟢 15/15 | 2026-11-11 |
+| 🟢 [tokenizer-lab](https://github.com/JesunAhmadUshno/tokenizer-lab) | [open](https://jesunahmadushno.github.io/tokenizer-lab/) | 🟢 up | 🟢 13/13 | 2026-11-11 |
 | 🟢 [multimodal-lab](https://github.com/JesunAhmadUshno/multimodal-lab) | [open](https://jesunahmadushno.github.io/multimodal-lab/) | 🟢 up | 🟢 14/14 | 2026-11-09 |
 | 🟢 [voice-agent-lab](https://github.com/JesunAhmadUshno/voice-agent-lab) | [open](https://jesunahmadushno.github.io/voice-agent-lab/) | 🟢 up | 🟢 15/15 | 2026-11-09 |
-| 🟢 [local-first-ai](https://github.com/JesunAhmadUshno/local-first-ai) | [open](https://jesunahmadushno.github.io/local-first-ai/) | 🟢 up | 🟢 13/13 | 2026-11-08 |
+| 🟢 [local-first-ai](https://github.com/JesunAhmadUshno/local-first-ai) | [open](https://jesunahmadushno.github.io/local-first-ai/) | 🟢 up | 🟢 15/15 | 2026-11-12 |
 | 🟢 [muse-n8n-extraction-101](https://github.com/JesunAhmadUshno/muse-n8n-extraction-101) | [open](https://jesunahmadushno.github.io/muse-n8n-extraction-101/) | 🟢 up | 🟢 1/1 | 2026-11-07 |
 | ⚪ [llama-index-doc-lab](https://github.com/JesunAhmadUshno/llama-index-doc-lab) | · | · | 🟢 5/5 | 2026-11-09 |
 | ⚪ [langchain-direct-study](https://github.com/JesunAhmadUshno/langchain-direct-study) | · | · | 🟢 8/8 | 2026-11-09 |
@@ -87,13 +87,13 @@ Every public project, checked every morning: is the live site answering, are the
 </details>
 
 <details>
-<summary><b>Infra + Systems</b> · 13 of 19 live</summary>
+<summary><b>Infra + Systems</b> · 12 of 19 live</summary>
 
 | Project | Live | Site | Checks | Updated |
 | :--- | :--- | :--- | :--- | :--- |
-| 🟢 [vllm-serving-lab](https://github.com/JesunAhmadUshno/vllm-serving-lab) | [open](https://jesunahmadushno.github.io/vllm-serving-lab/) | 🟢 up | 🟢 13/13 | 2026-11-08 |
+| 🟢 [vllm-serving-lab](https://github.com/JesunAhmadUshno/vllm-serving-lab) | [open](https://jesunahmadushno.github.io/vllm-serving-lab/) | 🟢 up | 🟢 17/17 | 2026-11-12 |
 | 🟢 [quantization-lab](https://github.com/JesunAhmadUshno/quantization-lab) | [open](https://jesunahmadushno.github.io/quantization-lab/) | 🟢 up | 🟢 13/13 | 2026-11-09 |
-| 🟢 [cuda-kernels-lab](https://github.com/JesunAhmadUshno/cuda-kernels-lab) | [open](https://jesunahmadushno.github.io/cuda-kernels-lab/) | 🟢 up | 🟢 13/13 | 2026-11-09 |
+| 🟠 [cuda-kernels-lab](https://github.com/JesunAhmadUshno/cuda-kernels-lab) | [open](https://jesunahmadushno.github.io/cuda-kernels-lab/) | 🟢 up | 🟠 12/15 (github\_actions in / for actions/configure-pages - Update #1696729823, github\_actions in / for actions/upload-pages-artifact - Update #1696729818, github\_actions in / for actions/checkout - Update #1696729797) | 2026-11-12 |
 | 🟢 [distributed-training-lab](https://github.com/JesunAhmadUshno/distributed-training-lab) | [open](https://jesunahmadushno.github.io/distributed-training-lab/) | 🟢 up | 🟢 14/14 | 2026-11-08 |
 | 🟢 [ml-platform-lab](https://github.com/JesunAhmadUshno/ml-platform-lab) | [open](https://jesunahmadushno.github.io/ml-platform-lab/) | 🟢 up | 🟢 15/15 | 2026-11-09 |
 | 🟢 [systems-languages-lab](https://github.com/JesunAhmadUshno/systems-languages-lab) | [open](https://jesunahmadushno.github.io/systems-languages-lab/) | 🟢 up | 🟢 13/13 | 2026-11-08 |
@@ -102,11 +102,11 @@ Every public project, checked every morning: is the live site answering, are the
 | 🟢 [data-engineering-scale-lab](https://github.com/JesunAhmadUshno/data-engineering-scale-lab) | [open](https://jesunahmadushno.github.io/data-engineering-scale-lab/) | 🟢 up | 🟢 10/10 | 2026-11-09 |
 | 🟢 [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) | [open](https://jesunahmadushno.github.io/server-and-networking-lab/) | 🟢 up | 🟢 7/7 | 2026-11-08 |
 | 🟢 [cyber-range-lab](https://github.com/JesunAhmadUshno/cyber-range-lab) | [open](https://jesunahmadushno.github.io/cyber-range-lab/) | 🟢 up | 🟢 13/13 | 2026-11-08 |
-| 🟢 [fleet-capstone](https://github.com/JesunAhmadUshno/fleet-capstone) | [open](https://jesunahmadushno.github.io/fleet-capstone/) | 🟢 up | 🟢 15/15 | 2026-11-09 |
+| 🟢 [fleet-capstone](https://github.com/JesunAhmadUshno/fleet-capstone) | [open](https://jesunahmadushno.github.io/fleet-capstone/) | 🟢 up | 🟢 15/15 | 2026-11-11 |
 | 🟢 [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) | [open](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/) | 🟢 up | 🟢 3/3 | 2026-11-09 |
 | ⚪ [beam-pipeline-lab](https://github.com/JesunAhmadUshno/beam-pipeline-lab) | · | · | 🟢 8/8 | 2026-11-09 |
 | ⚪ [boto3-aws-emulation-lab](https://github.com/JesunAhmadUshno/boto3-aws-emulation-lab) | · | · | 🟢 8/8 | 2026-11-09 |
-| ⚪ [hadoop-scale-lab](https://github.com/JesunAhmadUshno/hadoop-scale-lab) | · | · | 🟢 12/12 | 2026-11-09 |
+| ⚪ [hadoop-scale-lab](https://github.com/JesunAhmadUshno/hadoop-scale-lab) | · | · | 🟢 12/12 | 2026-11-11 |
 | ⚪ [kafka-streaming-lab](https://github.com/JesunAhmadUshno/kafka-streaming-lab) | · | · | 🟢 6/6 | 2026-11-09 |
 | ⚪ [ray-distributed-lab](https://github.com/JesunAhmadUshno/ray-distributed-lab) | · | · | 🟢 1/1 | 2026-11-08 |
 | ⚪ [triton-kernel-study](https://github.com/JesunAhmadUshno/triton-kernel-study) | · | · | 🟢 1/1 | 2026-11-08 |
@@ -173,11 +173,11 @@ Every public project, checked every morning: is the live site answering, are the
 ### Recently shipped
 
 <!--PROFILE:RECENT-->
-- `2026-11-09` [hadoop-scale-lab](https://github.com/JesunAhmadUshno/hadoop-scale-lab)
-- `2026-11-09` [experimentation-lab](https://github.com/JesunAhmadUshno/experimentation-lab) · [live](https://jesunahmadushno.github.io/experimentation-lab/)
-- `2026-11-09` [credit-risk-lab](https://github.com/JesunAhmadUshno/credit-risk-lab) · [live](https://jesunahmadushno.github.io/credit-risk-lab/lab/)
-- `2026-11-09` [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) · [live](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/)
-- `2026-11-09` [signal-ml-lab](https://github.com/JesunAhmadUshno/signal-ml-lab) · [live](https://jesunahmadushno.github.io/signal-ml-lab/)
+- `2026-11-12` [local-first-ai](https://github.com/JesunAhmadUshno/local-first-ai) · [live](https://jesunahmadushno.github.io/local-first-ai/)
+- `2026-11-12` [vllm-serving-lab](https://github.com/JesunAhmadUshno/vllm-serving-lab) · [live](https://jesunahmadushno.github.io/vllm-serving-lab/)
+- `2026-11-12` [cuda-kernels-lab](https://github.com/JesunAhmadUshno/cuda-kernels-lab) · [live](https://jesunahmadushno.github.io/cuda-kernels-lab/)
+- `2026-11-11` [llm-from-scratch](https://github.com/JesunAhmadUshno/llm-from-scratch) · [live](https://jesunahmadushno.github.io/llm-from-scratch/)
+- `2026-11-11` [tokenizer-lab](https://github.com/JesunAhmadUshno/tokenizer-lab) · [live](https://jesunahmadushno.github.io/tokenizer-lab/)
 <!--/PROFILE:RECENT-->
 
 ## The roadmap
@@ -226,7 +226,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 ## Contribution
 
 <!--PROFILE:CONTRIBUTION-->
-97 public repositories. 205 merged pull requests.
+97 public repositories. 214 merged pull requests.
 <!--/PROFILE:CONTRIBUTION-->
 
 ## Contact
@@ -235,7 +235,7 @@ ORCID: [0000-0002-6070-9025](https://orcid.org/0000-0002-6070-9025)
 
 <sub>
 <!--PROFILE:PROVENANCE-->
-Panels regenerated on 2026-11-11 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
+Panels regenerated on 2026-11-12 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
 <!--/PROFILE:PROVENANCE-->
 </sub>
 
