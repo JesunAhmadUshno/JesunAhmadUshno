@@ -1,0 +1,15 @@
+scripts:
+  - changed-files:
+      - any-glob-to-any-file: ["scripts/**"]
+data:
+  - changed-files:
+      - any-glob-to-any-file: ["data/**"]
+assets:
+  - changed-files:
+      - any-glob-to-any-file: ["assets/**"]
+docs:
+  - changed-files:
+      - any-glob-to-any-file: ["README.md"]
+automation:
+  - changed-files:
+      - any-glob-to-any-file: [".github/**"]
