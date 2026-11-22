@@ -14,14 +14,14 @@ That is the question under this work. The research spine is evaluation reliabili
 The judge below is the embedding judge from [rag-eval-harness](https://github.com/JesunAhmadUshno/rag-eval-harness). It has graded hundreds of answers and has never been checked against people. You are the check: read the case, then say whether the judge got it right. Your vote is recorded in this repository and the numbers below update within a minute.
 
 <!--PROFILE:JUDGE-->
-**Case 19 of 30** · a new case every day
+**Case 20 of 30** · a new case every day
 
-> **Question:** When was Martin Luther born?<br>
-> **Reference answer:** 10 November 1483<br>
-> **System answered:** 10 November<br>
-> **The judge said:** **FAIL**
+> **Question:** Besides Death Wish Coffee, how many other competitors participated in the contest?<br>
+> **Reference answer:** nine<br>
+> **System answered:** nine<br>
+> **The judge said:** **PASS**
 
-Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56f7cdc2a6d7ea1400e1728e%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56f7cdc2a6d7ea1400e1728e%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
+Is the judge right? &nbsp; [**Yes, the judge is right**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56bec38b3aeaaa14008c939a%20agree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.) &nbsp;·&nbsp; [**No, the judge is wrong**](https://github.com/JesunAhmadUshno/JesunAhmadUshno/issues/new?title=judge%3A%20squad-56bec38b3aeaaa14008c939a%20disagree&body=Press%20%22Submit%20new%20issue%22%20to%20cast%20this%20vote.%20A%20bot%20records%20it%20within%20a%20minute%2C%20replies%20with%20the%20running%20tally%2C%20and%20closes%20the%20issue.)
 
 This case so far: 0 agree, 0 disagree.
 
@@ -62,7 +62,7 @@ Every public project, checked every morning: is the live site answering, are the
 </details>
 
 <details>
-<summary><b>LLMs + Agents</b> · 18 of 21 live</summary>
+<summary><b>LLMs + Agents</b> · 19 of 21 live</summary>
 
 | Project | Live | Site | Checks | Updated |
 | :--- | :--- | :--- | :--- | :--- |
@@ -77,7 +77,7 @@ Every public project, checked every morning: is the live site answering, are the
 | 🟢 [finetune-lab](https://github.com/JesunAhmadUshno/finetune-lab) | [open](https://jesunahmadushno.github.io/finetune-lab/) | 🟢 up | 🟢 12/12 | 2026-11-19 |
 | 🟢 [post-training-data-lab](https://github.com/JesunAhmadUshno/post-training-data-lab) | [open](https://jesunahmadushno.github.io/post-training-data-lab/) | 🟢 up | 🟢 13/13 | 2026-11-20 |
 | 🟢 [rl-environments-and-verifiers](https://github.com/JesunAhmadUshno/rl-environments-and-verifiers) | [open](https://jesunahmadushno.github.io/rl-environments-and-verifiers/) | 🟢 up | 🟢 15/15 | 2026-11-20 |
-| 🟠 [llm-from-scratch](https://github.com/JesunAhmadUshno/llm-from-scratch) | [open](https://jesunahmadushno.github.io/llm-from-scratch/) | 🟠 down | 🟢 14/14 | 2026-11-19 |
+| 🟢 [llm-from-scratch](https://github.com/JesunAhmadUshno/llm-from-scratch) | [open](https://jesunahmadushno.github.io/llm-from-scratch/) | 🟢 up | 🟢 14/14 | 2026-11-19 |
 | 🟢 [tokenizer-lab](https://github.com/JesunAhmadUshno/tokenizer-lab) | [open](https://jesunahmadushno.github.io/tokenizer-lab/) | 🟢 up | 🟢 15/15 | 2026-11-16 |
 | 🟢 [multimodal-lab](https://github.com/JesunAhmadUshno/multimodal-lab) | [open](https://jesunahmadushno.github.io/multimodal-lab/) | 🟢 up | 🟢 19/19 | 2026-11-20 |
 | 🟢 [voice-agent-lab](https://github.com/JesunAhmadUshno/voice-agent-lab) | [open](https://jesunahmadushno.github.io/voice-agent-lab/) | 🟢 up | 🟢 13/13 | 2026-11-20 |
@@ -104,7 +104,7 @@ Every public project, checked every morning: is the live site answering, are the
 | 🟢 [terraform-for-ai-infrastructure](https://github.com/JesunAhmadUshno/terraform-for-ai-infrastructure) | [open](https://jesunahmadushno.github.io/terraform-for-ai-infrastructure/) | 🟢 up | 🟢 7/7 | 2026-11-19 |
 | 🟢 [airflow-reliability-lab](https://github.com/JesunAhmadUshno/airflow-reliability-lab) | [open](https://jesunahmadushno.github.io/airflow-reliability-lab/) | 🟢 up | 🟢 12/12 | 2026-11-18 |
 | 🟢 [data-engineering-scale-lab](https://github.com/JesunAhmadUshno/data-engineering-scale-lab) | [open](https://jesunahmadushno.github.io/data-engineering-scale-lab/) | 🟢 up | 🟢 8/8 | 2026-11-18 |
-| 🟢 [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) | [open](https://jesunahmadushno.github.io/server-and-networking-lab/) | 🟢 up | 🟢 6/6 | 2026-11-16 |
+| 🟢 [server-and-networking-lab](https://github.com/JesunAhmadUshno/server-and-networking-lab) | [open](https://jesunahmadushno.github.io/server-and-networking-lab/) | 🟢 up | 🟢 8/8 | 2026-11-16 |
 | 🟢 [cyber-range-lab](https://github.com/JesunAhmadUshno/cyber-range-lab) | [open](https://jesunahmadushno.github.io/cyber-range-lab/) | 🟢 up | 🟢 16/16 | 2026-11-19 |
 | 🟢 [fleet-capstone](https://github.com/JesunAhmadUshno/fleet-capstone) | [open](https://jesunahmadushno.github.io/fleet-capstone/) | 🟢 up | 🟢 15/15 | 2026-11-20 |
 | 🟢 [full-spectrum-portfolio-index](https://github.com/JesunAhmadUshno/full-spectrum-portfolio-index) | [open](https://jesunahmadushno.github.io/full-spectrum-portfolio-index/) | 🟢 up | 🟢 8/8 | 2026-11-17 |
@@ -255,7 +255,7 @@ Four sole-author preprints, Zenodo, 16 November 2026. The code behind each paper
 
 <sub>
 <!--PROFILE:PROVENANCE-->
-Panels regenerated on 2026-11-21 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
+Panels regenerated on 2026-11-22 by the [profile workflow](.github/workflows/profile.yml). Counts, site checks and test status are read from GitHub and the live sites by that workflow, never typed by hand.
 <!--/PROFILE:PROVENANCE-->
 </sub>
 
